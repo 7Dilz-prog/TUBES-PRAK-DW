@@ -1,0 +1,96 @@
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    border-bottom: 1px solid rgba(255, 165, 0, 0.3); /* Subtle accent line */
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.nav-link {
+    color: #FFD700 !important; /* Light color for links */
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 15px 10px;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-link:hover,TUBES-PRAK-DW
+.nav-link.active {
+    color: #FFD700 !important; /* Orange/Gold hover accent */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FFD700; /* Orange/Gold line indicator */
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
+/* Bagian Workshop */
+.container-md {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(10, 0, 0, 0.409);
+    padding: 30px;
+}
+
+.row.gy-5 > div {
+    padding: 20px;
+    border-right: 1px solid #010000;
+}
+
+.row.gy-5 > div:nth-child(even) {
+    border-right: none;
+}
+
+.fs-5 {
+    color: #0f0000;
+    font-weight: bold;
+}
+
+.row.gy-5 p {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .card {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    .container-xxl {
+        margin-left: 15px !important;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .row.gy-5 > div {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}

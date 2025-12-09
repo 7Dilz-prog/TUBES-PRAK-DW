@@ -1,0 +1,42 @@
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 165, 0, 0.3); /* Subtle accent line */
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.nav-link {
+    color: #FFD700 !important; /* Light color for links */
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 15px 10px;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-link:hover,TUBES-PRAK-DW
+.nav-link.active {
+    color: #FFD700 !important; /* Orange/Gold hover accent */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FFD700; /* Orange/Gold line indicator */
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
