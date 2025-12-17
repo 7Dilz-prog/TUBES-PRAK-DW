@@ -1,44 +1,57 @@
+/* ==================================== */
+/* 1. RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
+/* ==================================== */
 body {
-    background-color: #ffffff;
-    color: #333;
-    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
+/* ==================================== */
+/* 2. NAVBAR (PILLED EFFECT) */
+/* ==================================== */
 .navbar {
-    border-bottom: 1px solid rgba(255, 165, 0, 0.3); /* Subtle accent line */
-    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 1020;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 0;
 }
+
 .nav-link {
-    color: #FFD700 !important; /* Light color for links */
-    font-weight: 600;
-    margin: 0 10px;
-    padding: 15px 10px;
+    color: #ff9900 !important;
+    font-weight: 700 !important;
+    margin: 0 5px;
+    padding: 10px 15px;
     position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem !important;
 }
-.nav-link:hover,TUBES-PRAK-DW
+
+.nav-link:hover {
+    color: #FFF !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transform: translateY(-2px);
+}
+
 .nav-link.active {
-    color: #FFD700 !important; /* Orange/Gold hover accent */
-    background-color: rgba(255, 255, 255, 0.05);
+    color: #000000 !important;
+    background-color: #ff9900;
+    transform: none;
+    font-weight: 600;
+    border-radius: 50px;
 }
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 50%;
-    background-color: #FFD700; /* Orange/Gold line indicator */
-    transition: width 0.3s ease-out, left 0.3s ease-out;
-}
+
+.nav-link::after,
 .nav-link:hover::after,
 .nav-link.active::after {
-    width: 100%;
-    left: 0;
+    content: none;
 }
 
 /* Halaman Perapih  */
@@ -299,54 +312,93 @@ details li::before {
     margin-right: 15px;
 }
 
-/* Contact Info Grid */
-.container-xxl.mt-5.mb-5 .container {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+/* ==================================== */
+/* 7. Information */
+/* ==================================== */
+.full-width-contact {
+    background-color: #000000 !important;
+    padding: 50px 0;
+    width: 100%;
 }
 
-.row.gy-5 > div {
-    padding: 25px;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+.full-width-contact .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000 !important;
 }
 
-.row.gy-5 > div:nth-child(even) {
-    border-right: none;
-}
-
-.row.gy-5 > div:nth-child(5),
-.row.gy-5 > div:nth-child(6),
-.row.gy-5 > div:nth-child(7),
-.row.gy-5 > div:nth-child(8) {
+.row.gy-5>div:nth-last-child(-n + 2) {
     border-bottom: none;
 }
 
-.fs-5 {
-    color: #333;
-    font-weight: 700;
-    font-size: 1.3rem !important;
-    margin-bottom: 15px;
-    position: relative;
-    padding-bottom: 10px;
+.p-3.fs-5 {
+    font-weight: bold !important;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-.fs-5::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 3px;
-    background-color: #ffa500;
-}
-
-.row.gy-5 p {
-    color: #666;
+.container-md p {
     margin-bottom: 5px;
-    font-size: 1rem;
+    color: #1a1a1a !important;
+    font-weight: 400;
+
+}
+
+.row.gy-5>.col-6 {
+    position: static;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row.gy-5>.col-6::before {
+    content: none;
+}
+
+.full-width-contact .container.overflow-hidden {
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    overflow: visible !important;
+}
+
+.full-width-contact .container.overflow-hidden::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff9900;
+    border-radius: 8px;
+    z-index: 0;
+
+}
+
+.full-width-contact .container.overflow-hidden .row {
+    position: relative;
+    z-index: 1;
+}
+
+.row.gy-5 .p-3.fs-5 {
+    padding: 0 0 5px 0;
+    margin-bottom: 0;
+}
+
+.row.gy-5>.col-6:nth-child(odd) {
+    border-right: 1px solid #000000;
+    padding-right: 25px;
+}
+
+.row.gy-5>.col-6:nth-child(even) {
+    padding-left: 25px;
 }
 
 
@@ -357,15 +409,15 @@ details li::before {
         margin-left: 20px;
         width: 90% !important;
     }
-    
+
     .col img {
         height: 300px;
     }
-    
-    .row.gy-5 > div {
+
+    .row.gy-5>div {
         border-right: none;
     }
-    
+
     .feature-section {
         margin: 0 15px 25px;
     }
@@ -376,34 +428,34 @@ details li::before {
         margin: 20px auto;
         width: 95% !important;
     }
-    
+
     .container-xxl .fs-9 {
         font-size: 1rem !important;
         padding: 0 15px;
     }
-    
+
     .col img {
         height: 250px;
         margin-bottom: 20px;
     }
-    
+
     summary {
         font-size: 1.2rem;
     }
-    
+
     .fw-bold.fs-3 {
         font-size: 1.8rem !important;
     }
-    
+
     .btn-lg {
         padding: 15px 30px !important;
         font-size: 1.1rem !important;
     }
-    
+
     .feature-section {
         padding: 20px;
     }
-    
+
     .feature-section h3 {
         font-size: 1.3rem;
     }
@@ -415,6 +467,7 @@ details li::before {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -423,4 +476,16 @@ details li::before {
 
 details[open] ul {
     animation: slideDown 0.5s ease;
+}
+
+/* ==================================== */
+/* 8. FOOTER */
+/* ==================================== */
+footer {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 0.9rem;
+    text-align: center;
 }

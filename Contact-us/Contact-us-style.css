@@ -1,739 +1,314 @@
-body {
-    background-color: #ffffff;
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-
-
-.navbar {
-    border-bottom: 1px solid rgba(255, 165, 0, 0.3); /* Subtle accent line */
-    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-.nav-link {
-    color: #FFD700 !important; /* Light color for links */
-    font-weight: 600;
-    margin: 0 10px;
-    padding: 15px 10px;
-    position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-.nav-link:hover,TUBES-PRAK-DW
-.nav-link.active {
-    color: #FFD700 !important; /* Orange/Gold hover accent */
-    background-color: rgba(255, 255, 255, 0.05);
-}
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 50%;
-    background-color: #FFD700; /* Orange/Gold line indicator */
-    transition: width 0.3s ease-out, left 0.3s ease-out;
-}
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-    left: 0;
-}
-
-
-
-/* Logo instagram , facebook , tiktok , youtube */
-
-/* Import Bootstrap Icons */
+/* =========================
+   GLOBAL
+========================= */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 
-/* Styling umum untuk social media boxes */
+/* ==================================== */
+/* 1. RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
+/* ==================================== */
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* ==================================== */
+/* 2. NAVBAR (PILLED EFFECT) */
+/* ==================================== */
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 0;
+}
+
+.nav-link {
+    color: #ff9900 !important;
+    font-weight: 700 !important;
+    margin: 0 5px;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem !important;
+}
+
+.nav-link:hover {
+    color: #FFF !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    color: #000000 !important;
+    background-color: #ff9900;
+    transform: none;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.nav-link::after,
+.nav-link:hover::after,
+.nav-link.active::after {
+    content: none;
+}
+
+/* =========================
+   SOCIAL MEDIA BOX
+========================= */
 .social-box {
     display: block;
     text-decoration: none;
     padding: 30px 20px;
-    border-radius: 15px;
+    border-radius: 16px;
     text-align: center;
-    transition: all 0.3s ease;
     color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
     height: 100%;
-    min-height: 200px;
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Efek hover untuk semua social box */
 .social-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    color: white;
 }
 
-/* Social icon */
 .social-icon {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 15px;
-    display: block;
-    transition: transform 0.3s ease;
 }
 
-.social-box:hover .social-icon {
-    transform: scale(1.2);
-}
-
-/* Social title */
 .social-title {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-/* Social handle */
 .social-handle {
     font-size: 14px;
     opacity: 0.9;
-    margin-bottom: 0;
 }
 
-/* Instagram - Gradien Instagram */
+/* Warna Social */
 .instagram-bg {
-    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-    position: relative;
+    background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C, #FD1D1D);
 }
 
-/* Efek khusus untuk Instagram */
-.instagram-bg::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 10px 10px;
-    opacity: 0.1;
-    transform: rotate(45deg);
-}
-
-/* TikTok - Gradien khas TikTok */
 .tiktok-bg {
-    background: linear-gradient(135deg, #000000, #010101, #69C9D0, #EE1D52);
-    position: relative;
+    background: linear-gradient(135deg, #000, #69C9D0, #EE1D52);
 }
 
-/* Efek khusus untuk TikTok */
-.tiktok-bg::after {
-    content: '';
+.facebook-bg {
+    background: linear-gradient(135deg, #1877F2, #0A5DC2);
+}
+
+.youtube-bg {
+    background: linear-gradient(135deg, #FF0000, #CC0000);
+}
+
+/* =========================
+   CONTACT INFO SECTION
+========================= */
+.bg-dark-custom {
+    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+    /* Abu-abu lembut */
+    border-radius: 20px;
+    padding: 50px 30px;
+}
+
+.contact-info-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-8px);
+    border-top: 4px solid #ffa500;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffa500, #ff8c00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    color: #000;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-content p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   FAQ
+========================= */
+.accordion {
+    max-width: 800px;
+    margin: auto;
+    background-color: #e5e7eb;
+    border-radius: 12px;
+}
+
+.accordion-item {
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.2);
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff4e5;
+    color: #ff8c00;
+}
+
+
+/* ==================================== */
+/* 7. Information */
+/* ==================================== */
+.full-width-contact {
+    background-color: #000000 !important;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.full-width-contact .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000 !important;
+}
+
+.row.gy-5>div:nth-last-child(-n + 2) {
+    border-bottom: none;
+}
+
+.p-3.fs-5 {
+    font-weight: bold !important;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container-md p {
+    margin-bottom: 5px;
+    color: #1a1a1a !important;
+    font-weight: 400;
+
+}
+
+.row.gy-5>.col-6 {
+    position: static;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row.gy-5>.col-6::before {
+    content: none;
+}
+
+.full-width-contact .container.overflow-hidden {
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    overflow: visible !important;
+}
+
+.full-width-contact .container.overflow-hidden::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 10px,
-        rgba(255,255,255,0.05) 10px,
-        rgba(255,255,255,0.05) 20px
-    );
-    opacity: 0.3;
+    background-color: #ff9900;
+    border-radius: 8px;
+    z-index: 0;
+
 }
 
-/* Facebook (dengan class linkedin-bg) - Biru Facebook */
-.linkedin-bg {
-    background: linear-gradient(135deg, #1877F2, #0A5DC2);
-    position: relative;
-}
-
-/* Efek gelombang untuk Facebook */
-.linkedin-bg::before {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transform: scale(1.2);
-}
-
-/* YouTube - Merah YouTube dengan gradien */
-.youtube-bg {
-    background: linear-gradient(135deg, #FF0000, #CC0000);
-    position: relative;
-}
-
-/* Efek play button untuk YouTube */
-.youtube-bg::after {
-    content: '▶';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: rgba(255, 255, 255, 0.1);
-    font-size: 30px;
-}
-
-/* Contact info cards */
-.contact-info-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-    height: 100%;
-    border: 1px solid #eee;
-}
-
-.contact-info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.icon-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-}
-
-.bg-orange {
-    background-color: #ffa500;
-}
-
-.info-title {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.info-content p {
-    color: #666;
-    margin-bottom: 5px;
-}
-
-/* Dark container untuk background */
-.bg-dark-custom {
-    background-color: #f8f9fa;
-    border-radius: 20px;
-}
-
-/* Responsif untuk mobile */
-@media (max-width: 768px) {
-    .social-box {
-        padding: 20px 15px;
-        min-height: 180px;
-    }
-    
-    .social-icon {
-        font-size: 40px;
-    }
-    
-    .social-title {
-        font-size: 18px;
-    }
-    
-    .social-handle {
-        font-size: 12px;
-    }
-}
-
-/* Animasi untuk loading icon (opsional) */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.social-box:hover .social-icon {
-    animation: pulse 0.5s ease;
-}
-
-/* Icon call us , write to us dan address */
-/* Styling untuk bagian Contact Info */
-.contact-info-card {
-    background: white;
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    height: 100%;
-    border-top: 4px solid transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Efek hover pada card */
-.contact-info-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border-top: 4px solid #ffa500;
-}
-
-/* Lingkaran ikon */
-.icon-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-    font-size: 32px;
-    transition: all 0.3s ease;
+.full-width-contact .container.overflow-hidden .row {
     position: relative;
     z-index: 1;
 }
 
-.contact-info-card:hover .icon-circle {
-    transform: scale(1.1) rotate(5deg);
-}
-
-/* Background orange untuk ikon */
-.bg-orange {
-    background-color: #ffa500;
-    background: linear-gradient(135deg, #ffa500, #ff8c00);
-}
-
-/* Ikon khusus untuk setiap tipe */
-.icon-circle i {
-    transition: all 0.3s ease;
-}
-
-.contact-info-card:hover .icon-circle i {
-    transform: scale(1.2);
-}
-
-/* Telephone icon (Call us) khusus */
-.icon-circle .bi-telephone {
-    color: #000;
-}
-
-/* Envelope icon (Write to us) khusus */
-.icon-circle .bi-envelope {
-    color: #000;
-}
-
-/* Geo-alt icon (Address) khusus */
-.icon-circle .bi-geo-alt {
-    color: #000;
-}
-
-/* Efek khusus untuk Call us - Telephone waves */
-.contact-info-card:nth-child(1) .icon-circle::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 165, 0, 0.3);
-    animation: pulse-ring 2s infinite;
-    z-index: -1;
-}
-
-@keyframes pulse-ring {
-    0% {
-        transform: scale(0.8);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
-}
-
-/* Efek khusus untuk Write to us - Envelope flap */
-.contact-info-card:nth-child(2) .icon-circle {
-    background: linear-gradient(135deg, #ffa500, #ff8c00);
-}
-
-.contact-info-card:nth-child(2):hover .icon-circle .bi-envelope {
-    animation: envelope-flap 0.5s ease;
-}
-
-@keyframes envelope-flap {
-    0%, 100% {
-        transform: rotateX(0deg);
-    }
-    50% {
-        transform: rotateX(-20deg);
-    }
-}
-
-/* Efek khusus untuk Address - Pin drop */
-.contact-info-card:nth-child(3) .icon-circle {
-    background: linear-gradient(135deg, #ffa500, #ff8c00);
-}
-
-.contact-info-card:nth-child(3):hover .icon-circle .bi-geo-alt {
-    animation: pin-drop 0.6s ease;
-}
-
-@keyframes pin-drop {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(5px);
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Konten informasi */
-.info-content {
-    margin-top: 15px;
-}
-
-.info-title {
-    color: #333;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 15px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.info-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 3px;
-    background: #ffa500;
-    transition: width 0.3s ease;
-}
-
-.contact-info-card:hover .info-title::after {
-    width: 60px;
-}
-
-.info-content p {
-    color: #666;
-    margin-bottom: 8px;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-/* Container background */
-.bg-dark-custom {
-    background-color: #f8f9fa;
-    border-radius: 20px;
-    padding: 40px 30px !important;
-}
-
-/* Responsif untuk mobile */
-@media (max-width: 768px) {
-    .contact-info-card {
-        padding: 25px 15px;
-        margin-bottom: 20px;
-    }
-    
-    .icon-circle {
-        width: 70px;
-        height: 70px;
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    
-    .info-title {
-        font-size: 18px;
-    }
-    
-    .info-content p {
-        font-size: 14px;
-    }
-    
-    .bg-dark-custom {
-        padding: 30px 20px !important;
-    }
-}
-
-/* Tambahan efek untuk seluruh section */
-.bg-dark-custom {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border: 1px solid rgba(255, 165, 0, 0.1);
-}
-
-/* Efek hover pada teks */
-.info-content p {
-    transition: color 0.3s ease;
-}
-
-.contact-info-card:hover .info-content p {
-    color: #444;
-}
-
-/* Border radius konsisten */
-.contact-info-card,
-.icon-circle,
-.bg-dark-custom {
-    border-radius: 12px;
-}
-
-/* Shadow untuk depth */
-.icon-circle {
-    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.2);
-}
-
-.contact-info-card {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Bagian Workshop */
-.container-md {
-    background-color: #D4AF37;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(10, 0, 0, 0.409);
-    padding: 30px;
-}
-
-.row.gy-5 > div {
-    padding: 20px;
-    border-right: 1px solid #010000;
-}
-
-.row.gy-5 > div:nth-child(even) {
-    border-right: none;
-}
-
-.fs-5 {
-    color: #0f0000;
-    font-weight: bold;
-}
-
-.row.gy-5 p {
-    color: #000000;
-    margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
-    color: #8b8585;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FAQ */
-/* FAQ Section Styling */
-.faq-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-.faq-section h2 {
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-}
-
-.faq-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: #ffa500;
-    border-radius: 2px;
-}
-
-/* Accordion Styling */
-.accordion {
-    max-width: 800px;
-    margin: 40px auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.accordion-item {
-    background-color: white;
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border-left: 4px solid transparent;
-}
-
-.accordion-item:hover {
-    border-left: 4px solid #ffa500;
-    transform: translateX(5px);
-}
-
-.accordion-header {
+.row.gy-5 .p-3.fs-5 {
+    padding: 0 0 5px 0;
     margin-bottom: 0;
 }
 
-.accordion-button {
-    background-color: white;
-    color: #333;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 20px 25px;
-    border: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
+.row.gy-5>.col-6:nth-child(odd) {
+    border-right: 1px solid #000000;
+    padding-right: 25px;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #fff9f0;
-    color: #ff8c00;
-    box-shadow: none;
+.row.gy-5>.col-6:nth-child(even) {
+    padding-left: 25px;
 }
 
-.accordion-button:focus {
-    border-color: transparent;
-    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);
-}
-
-.accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    transition: transform 0.3s ease;
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-.accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff8c00'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    transform: rotate(180deg);
-}
-
-/* Accordion Body */
-.accordion-collapse {
-    border-radius: 0 0 8px 8px;
-}
-
-.accordion-body {
-    padding: 20px 25px;
-    background-color: #f9f9f9;
-    color: #555;
-    line-height: 1.6;
-    font-size: 15px;
-    border-top: 1px solid #eee;
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* FAQ Header dengan animasi */
-.faq-header {
+/* ==================================== */
+/* 8. FOOTER */
+/* ==================================== */
+footer {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 0.9rem;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-.faq-header hr {
-    border: none;
-    border-top: 5px solid #ffa500;
-    width: 100px;
-    margin: 15px auto 0;
-    border-radius: 5px;
-    animation: widthGrow 2s ease-in-out infinite alternate;
-}
-
-@keyframes widthGrow {
-    0% {
-        width: 100px;
-    }
-    100% {
-        width: 150px;
-    }
-}
-
-/* Responsif */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    .faq-section {
-        padding: 40px 15px;
+    .social-box {
+        padding: 20px;
     }
-    
-    .accordion-button {
-        padding: 15px 20px;
-        font-size: 15px;
+
+    .icon-circle {
+        width: 70px;
+        height: 70px;
     }
-    
-    .accordion-body {
-        padding: 15px 20px;
-        font-size: 14px;
+
+    .bg-dark-custom {
+        padding: 30px 20px;
     }
-    
-    .faq-header hr {
-        width: 80px;
-    }
-}
-
-/* Efek hover untuk accordion item */
-.accordion-item:hover .accordion-button {
-    background-color: #fff9f0;
-    padding-left: 25px; /* Kembalikan ke padding normal */
-}
-
-/* Warna untuk border accordion saat aktif */
-.accordion-button:not(.collapsed) {
-    border-bottom: 1px solid #ffa500;
-}
-
-/* Animasi untuk accordion body saat dibuka */
-.accordion-collapse.collapsing {
-    transition: height 0.35s ease;
-}
-
-/* Tambahan styling untuk teks FAQ */
-.faq-section .lead {
-    color: #666;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Efek shadow saat accordion terbuka */
-.accordion-item:has(.accordion-button:not(.collapsed)) {
-    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.1);
-}
-
-/* Hapus padding kiri tambahan saat hover */
-.accordion-button:not(.collapsed) {
-    padding-left: 25px; /* Pastikan konsisten */
 }

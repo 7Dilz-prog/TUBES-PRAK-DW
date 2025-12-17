@@ -1,135 +1,468 @@
-/* Reset dan dasar */
+/* ==================================== */
+/* 1. RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
+/* ==================================== */
 body {
-    background-color: #ffffff;
-    color: #333;
-    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
-
+/* ==================================== */
+/* 2. NAVBAR (PILLED EFFECT) */
+/* ==================================== */
 .navbar {
-    border-bottom: 1px solid rgba(255, 165, 0, 0.3); /* Subtle accent line */
-    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 1020;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 0;
 }
+
 .nav-link {
-    color: #FFD700 !important; /* Light color for links */
-    font-weight: 600;
-    margin: 0 10px;
-    padding: 15px 10px;
+    color: #ff9900 !important;
+    font-weight: 700 !important;
+    margin: 0 5px;
+    padding: 10px 15px;
     position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem !important;
 }
-.nav-link:hover,TUBES-PRAK-DW
+
+.nav-link:hover {
+    color: #FFF !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transform: translateY(-2px);
+}
+
 .nav-link.active {
-    color: #FFD700 !important; /* Orange/Gold hover accent */
-    background-color: rgba(255, 255, 255, 0.05);
+    color: #000000 !important;
+    background-color: #FFD700 !important;
+    transform: none;
+    font-weight: 600;
+    border-radius: 50px;
 }
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 50%;
-    background-color: #FFD700; /* Orange/Gold line indicator */
-    transition: width 0.3s ease-out, left 0.3s ease-out;
-}
+
+.nav-link::after,
 .nav-link:hover::after,
 .nav-link.active::after {
-    width: 100%;
-    left: 0;
+    content: none;
 }
 
 
+/* ==================================== */
+/* 3. ARTICLE / HERO SECTION (DITINGKATKAN VISIBILITAS) */
+/* ==================================== */
+article {
+    background: no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    transition: background-image 5s ease-in-out;
+    animation: gantiBackground 20s infinite;
+    position: relative;
+    z-index: 1;
+}
 
-/* Artikel/Card utama */
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.card-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+@keyframes gantiBackground {
+
+    /* ... (keyframes tidak diubah) ... */
+    0% {
+        background-image: url('Background 1.jpeg');
+    }
+
+    16.66% {
+        background-image: url('Background 1.jpeg');
+    }
+
+    33.33% {
+        background-image: url('Background 2.jpeg');
+    }
+
+    66.66% {
+        background-image: url('Background 2.jpeg');
+    }
+
+    83.33% {
+        background-image: url('Background 3.jpeg');
+    }
+
+    100% {
+        background-image: url('Background 3.jpeg');
+    }
+}
+
+
+/* ==================================== */
+/* 4. CARD & GARIS (ARTIKEL) */
+/* ==================================== */
 .card {
-    background-color: transparent;
-    color: #ae7b02;
+    background-color: rgba(255, 255, 255, 0.719) !important;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.text-start {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card-title {
-    color: #ae7b02;
-    font-weight: bold;
+    color: #000000 !important;
+    font-weight: 700;
+    /* Extra bold */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
 }
 
 .card-text {
-    color: #656464;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
 
-/* Tombol */
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 300px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+
+/* ==================================== */
+/* 5. COINTAINER IVENTORY & WORKSHOP*/
+/* ==================================== */
+.container-xxl {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1a1a1a;
+}
+
+.text-start.fs-3 {
+    font-weight: 700;
+    color: #FFD700 !important;
+    margin-bottom: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.text-start.fs-5 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
 .btn-outline-secondary {
-    border-color: #ffa500;
-    color: #ffa500;
-    padding: 10px 25px;
-    border-radius: 50px;
+    padding: 10px 30px;
+    border-radius: 50px !important;
     transition: all 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-color: #ff9900 !important;
+    color: #ff9900 !important;
 }
 
 .btn-outline-secondary:hover {
-    background-color: #ffa500;
-    color: #000;
-    border-color: #ffa500;
+    border-color: #ff9900 !important;
+    color: #000 !important;
+    /* Teks menjadi hitam saat hover */
+    background-color: #ff9900 !important;
 }
 
 
-/* Bagian Workshop */
-.container-md {
-    background-color: #919090;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(10, 0, 0, 0.409);
-    padding: 30px;
-}
-
-.row.gy-5 > div {
-    padding: 20px;
-    border-right: 1px solid #000000;
-}
-
-.row.gy-5 > div:nth-child(even) {
-    border-right: none;
-}
-
-.fs-5 {
-    color:	#FFD700;
-    font-weight: bold;
-}
-
-.row.gy-5 p {
-    color: #000000;
-    margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
+/* ==================================== */
+/* 6. CAROUSEL */
+/* ==================================== */
+.container-fluid2 {
+    /* Background properties */
     background-color: #000;
-    color: #7e7e7e;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    width: 100%;
+    min-height: 95vh;
+    max-width: none;
+
+    /* Positioning (opsional, tergantung tata letak yang diinginkan) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Tambahkan justify-content jika perlu */
+
+    /* Hapus padding horizontal bawaan Bootstrap */
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Responsif untuk mobile */
+.carousel {
+    box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Ensure images cover the area without distortion */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 5px;
+    bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.carousel-caption p {
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+.carousel-indicators button {
+    background-color: #FFD700 !important;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+
+/* ==================================== */
+/* 7. Information */
+/* ==================================== */
+.full-width-contact {
+    background-color: #000000 !important;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.full-width-contact .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000 !important;
+}
+
+.row.gy-5>div:nth-last-child(-n + 2) {
+    border-bottom: none;
+}
+
+.p-3.fs-5 {
+    font-weight: bold !important;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container-md p {
+    margin-bottom: 5px;
+    color: #1a1a1a !important;
+    font-weight: 400;
+
+}
+
+.row.gy-5>.col-6 {
+    position: static;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row.gy-5>.col-6::before {
+    content: none;
+}
+
+.full-width-contact .container.overflow-hidden {
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    overflow: visible !important;
+}
+
+.full-width-contact .container.overflow-hidden::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff9900;
+    border-radius: 8px;
+    z-index: 0;
+
+}
+
+.full-width-contact .container.overflow-hidden .row {
+    position: relative;
+    z-index: 1;
+}
+
+.row.gy-5 .p-3.fs-5 {
+    padding: 0 0 5px 0;
+    margin-bottom: 0;
+}
+
+.row.gy-5>.col-6:nth-child(odd) {
+    border-right: 1px solid #000000;
+    padding-right: 25px;
+}
+
+.row.gy-5>.col-6:nth-child(even) {
+    padding-left: 25px;
+}
+
+
+/* ==================================== */
+/* 8. FOOTER */
+/* ==================================== */
+footer {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* ==================================== */
+/* 9. RESPONSIVE (MEDIA QUERIES) */
+/* ==================================== */
+/* === Tablet dan Desktop Kecil (maksimal 992px) === */
+@media (max-width: 992px) {
+    article {
+        min-height: 70vh;
+    }
+
+    .full-width-contact .container,
+    .container-xxl .container {
+        max-width: 960px;
+    }
+
+    .carousel {
+        width: 95%;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .text-start.fs-3 {
+        font-size: 2rem !important;
+    }
+}
+
 @media (max-width: 768px) {
+    article {
+        min-height: 60vh;
+        padding: 30px 0;
+    }
+
+    .card-wrapper {
+        padding: 0 15px;
+    }
+
     .card {
         width: 100% !important;
-        margin-left: 0 !important;
+        margin: 0 auto 30px auto !important;
+        padding: 15px;
     }
-    
-    .container-xxl {
-        margin-left: 15px !important;
+
+    .card-title {
+        font-size: 1.5rem;
     }
-    
-    .carousel-item img {
-        height: 300px;
+
+    .card-text {
+        font-size: 0.9rem;
     }
-    
-    .row.gy-5 > div {
+
+    .navbar-collapse {
+        background-color: #0d0d0d;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        border-radius: 5px;
+    }
+
+    .accent-divider {
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    .container-xxl,
+    .full-width-contact .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .text-start.fs-3 {
+        font-size: 1.5rem !important;
+        margin-left: 0;
+    }
+
+    .text-start.fs-5 {
+        font-size: 1rem;
+    }
+
+    .row.gy-5>div {
         border-right: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row.gy-5>div:nth-last-child(-n + 2) {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 20px;
     }
 }
-
