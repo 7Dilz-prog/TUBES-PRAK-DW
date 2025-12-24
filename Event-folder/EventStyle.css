@@ -7,34 +7,46 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
 /* ==================================== */
-/* 2. NAVBAR (PILLED EFFECT) */
+/* NAVBAR (PILLED EFFECT) */
 /* ==================================== */
 .navbar {
-    position: sticky !important;
+    position: fixed !important; 
     top: 0;
-    z-index: 1020;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent !important; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: none !important;
+}
+
+
+.navbar.nav-scrolled {
+    background-color: #000000 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.575) !important;
+    padding: 10px 0;
 }
 
 .nav-link {
-    color: #ff9900 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 15p;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
-    color: #FFF !important;
+    color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transform: translateY(-2px);
@@ -42,7 +54,7 @@ body {
 
 .nav-link.active {
     color: #000000 !important;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
     border-radius: 50px;
@@ -54,8 +66,183 @@ body {
     content: none;
 }
 
+
 /* ==================================== */
-/* 7. Information */
+/* ARTICLE 
+/* ==================================== */
+article {
+    background: url(Background\ one.jpeg) center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.726);
+    z-index: 2;
+}
+
+
+/* ==================================== */
+/* CARD & GARIS (ARTIKEL) */
+/* ==================================== */
+.card {
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding-top: 65px !important;
+    padding: 20px;
+    background-color: transparent !important;
+    z-index: 10;
+    
+}
+
+.card-title.fs-2{
+    color: #ffffff !important;
+    font-weight: 700;
+    opacity: 1 !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+}
+
+.card-text.fs-6{
+    color: #ff9900;
+}
+
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff9900;
+    width: 190px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+/* ==================================== */
+/* Events card */
+/* ==================================== */
+.container.text-center{
+    margin-top: 70px;
+}
+
+.card-img-top{
+     box-shadow:  0 5px 30px rgb(255, 153, 0);
+}
+
+.card-title {
+    color: #FFD700 !important;
+    font-weight: 700;
+    opacity: 1 !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+}
+
+.btn.btn-primary{
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
+    border-color: #000000;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+
+/* ==================================== */
+/* Umcoming Events */
+/* ==================================== */
+.container-fluid.upcoming{
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.fw-bold.text-center{
+    color: white;
+}
+
+.accent-divider2{
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 190px;
+    margin: 20px 0;
+    margin-left: 580px;
+    border-radius: 8px;
+}
+
+
+.row.mt-4 {
+    gap: 20px 0; 
+}
+
+.card {
+    background: #1e1e1e; 
+    border: 1px solid #333;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff9900;
+    box-shadow: 0 15px 30px rgba(255, 140, 0, 0.2);
+    background: linear-gradient(145deg, #252525, #1a1a1a);
+}
+
+.card h5.fw-bold {
+    color: #FFD700; 
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.card p {
+    color:white;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.card h5::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff9900;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.card:hover h5::after {
+    width: 50px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+/* ==================================== */
+/* Documentary Video */
 /* ==================================== */
 .full-width-contact {
     background-color: #000000 !important;
@@ -63,86 +250,29 @@ body {
     width: 100%;
 }
 
-.full-width-contact .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000000 !important;
+.video-container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
+    
+    /* CARA BARU: Maksa rasio 16 banding 9 */
+    aspect-ratio: 16 / 9 !important; 
 }
 
-.row.gy-5>div:nth-last-child(-n + 2) {
-    border-bottom: none;
+.video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    border: none;
 }
 
-.p-3.fs-5 {
-    font-weight: bold !important;
-    color: #000000;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+.full-width-contact p{
+    padding-top: 30px !important;
+    color: white;
 }
-
-.container-md p {
-    margin-bottom: 5px;
-    color: #1a1a1a !important;
-    font-weight: 400;
-
-}
-
-.row.gy-5>.col-6 {
-    position: static;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.row.gy-5>.col-6::before {
-    content: none;
-}
-
-.full-width-contact .container.overflow-hidden {
-    position: relative;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: transparent !important;
-    overflow: visible !important;
-}
-
-.full-width-contact .container.overflow-hidden::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff9900;
-    border-radius: 8px;
-    z-index: 0;
-
-}
-
-.full-width-contact .container.overflow-hidden .row {
-    position: relative;
-    z-index: 1;
-}
-
-.row.gy-5 .p-3.fs-5 {
-    padding: 0 0 5px 0;
-    margin-bottom: 0;
-}
-
-.row.gy-5>.col-6:nth-child(odd) {
-    border-right: 1px solid #000000;
-    padding-right: 25px;
-}
-
-.row.gy-5>.col-6:nth-child(even) {
-    padding-left: 25px;
-}
-
 
 /* ==================================== */
 /* 8. FOOTER */
