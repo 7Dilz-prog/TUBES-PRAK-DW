@@ -18,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
@@ -25,27 +26,38 @@ body {
 /* NAVBAR (PILLED EFFECT) */
 /* ==================================== */
 .navbar {
-    position: sticky !important;
+    position: fixed !important; 
     top: 0;
-    z-index: 1020;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent !important; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: none !important;
+}
+
+
+.navbar.nav-scrolled {
+    background-color: #000000 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.575) !important;
+    padding: 10px 0;
 }
 
 .nav-link {
-    color: #ff9900 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 15p;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
-    color: #FFF !important;
+    color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transform: translateY(-2px);
@@ -53,7 +65,7 @@ body {
 
 .nav-link.active {
     color: #000000 !important;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
     border-radius: 50px;
@@ -65,25 +77,68 @@ body {
     content: none;
 }
 
-/* =====================
-   CARD & SECTION
-===================== */
+
+/* ==================================== */
+/* ARTICLE 
+/* ==================================== */
+article {
+    background: url(Background\ 01.jpeg) center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: 2;
+}
+
+
+/* ==================================== */
+/* 4. CARD & GARIS (ARTIKEL) */
+/* ==================================== */
 .card {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding-top: 60px !important;
+    padding: 20px;
+    background-color: transparent !important;
+    z-index: 10;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+    opacity: 1 !important;
 }
 
 .card-title {
-    letter-spacing: 1px;
+    color: #ffffff !important;
+    font-weight: 700;
+    opacity: 1 !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+    font-size: 50px;
 }
 
-hr {
-    opacity: 1;
+
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff9900;
+    width: 300px;
+    margin: 20px 0 !important;
+    border-radius: 8px;
 }
+
 
 /* =====================
-   IMAGE SECTION
+   IMAGE & ABOUT SECTION 2
 ===================== */
 .col-6 img {
     transition: transform 0.6s ease;
@@ -93,87 +148,192 @@ hr {
     transform: scale(1.05);
 }
 
-/* =====================
-   TIMELINE
-===================== */
+.container-fluid.m-0.p-0{
+    background-color: #1a1a1a;
+}
+
+.text-uppercase {
+    color :#ff9900;
+}
+
+.mt-4{
+    color:#FFD700;
+}
+
+.fw-bold2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accent-divider2{
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 400px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 85px;
+}
+
+.text-1.mt-4{
+    color :white
+}
+
+.text-2.mt-3,
+.text-4.mt-3{
+    color:#ff9900
+}
+
+
+/*
+ * -------------------
+ * GENERAL TIMELINE STYLES
+ * -------------------
+ */
 .timeline-container {
-    background-color: #fff;
-    padding: 80px 0;
+    padding: 10px 0;
+    background: url(Background\ 02.jpeg) center center/cover;
 }
 
 .timeline {
     position: relative;
+    padding: 0;
+    list-style: none;
 }
-
 .timeline::before {
-    content: "";
+    content: '';
     position: absolute;
-    left: 50%;
     top: 0;
-    width: 4px;
-    height: 100%;
-    background-color: var(--primary);
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%; 
+    width: 2px;
+    background-color: #ff9900;
+    margin-left: -1px; 
+    z-index: 0;
+}
+.text-uppercase{
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+.fw-bold.fs-2.mt-2,
+.w-75.mx-auto {
+    color: white;
 }
 
+.w-75.mx-auto.mt-3{
+    color: #FFD700;
+}
+
+/*
+ * -------------------
+ * TIMELINE ITEM STYLES
+ * -------------------
+ */
 .timeline-item {
+    margin-bottom: 30px;
     position: relative;
-    margin-bottom: 50px;
+    overflow: hidden;
+    
+}
+.timeline-item:before,
+.timeline-item:after {
+    content: " ";
+    display: table;
+}
+.timeline-item:after {
+    clear: both;
+}
+.timeline-content {
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    position: relative;
+}
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 15px; 
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000000; 
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    left: 50%;
+    margin-left: -10px; 
+}
+
+/*
+ * -------------------
+ * LEFT & RIGHT ALIGNMENT
+ * -------------------
+ */
+.timeline-item.right {
+    padding-left: 55%; 
+}
+
+.timeline-item.right .timeline-content {
+    width: 100%; 
+    float: left;
 }
 
 .timeline-item.left {
-    text-align: right;
-    padding-right: 60px;
+    padding-right: 55%; 
 }
 
-.timeline-item.right {
-    text-align: left;
-    padding-left: 60px;
-}
-
-.timeline-content {
-    background-color: #fff;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.timeline-content::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    width: 18px;
-    height: 18px;
-    background-color: var(--primary);
-    border-radius: 50%;
-}
-
-.timeline-item.left .timeline-content::before {
-    right: -68px;
+.timeline-item.left .timeline-content {
+    width: 100%;
+    float: right;
 }
 
 .timeline-item.right .timeline-content::before {
-    left: -68px;
+    content: " ";
+    position: absolute;
+    top: 18px;
+    right: -12px; 
+    border-style: solid;
+    border-width: 10px 0 10px 12px; 
+    border-color: transparent transparent transparent #ffffff; 
 }
 
-/* =====================
-   CONTACT & BUTTON
-===================== */
-.btn {
-    border-radius: 50px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Untuk Item Kiri */
+.timeline-item.left .timeline-content::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    left: -12px; 
+    border-style: solid;
+    border-width: 10px 12px 10px 0; 
+    border-color: transparent #ffffff transparent transparent;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
 
 /* =====================
    TEAM SECTION
 ===================== */
+.container-fluid.text-center{
+    background-color: #1a1a1a;
+    padding: 60px
+}
+
+.fw-bold3{
+    color: white;
+    font-weight: bold;
+}
+
+.accent-divider3{
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 200px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 513px;
+}
+
 .rounded-circle {
-    border: 4px solid var(--primary);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -185,11 +345,13 @@ hr {
 .col-md-4 h5 {
     margin-top: 15px;
     font-weight: 700;
+    color: white;
 }
 
-/* =====================
-   TESTIMONIAL
-===================== */
+.col-md-4 p {
+    color: #ff9900;
+}
+
 .border.rounded {
     border-radius: 16px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -202,7 +364,35 @@ hr {
 }
 
 /* ==================================== */
-/* 7. Information */
+/* WHat Our Customers Say */
+/* ==================================== */
+.container-fluid2{
+    background: url(Background\ 03.jpeg) center center/cover;
+    padding: 70px;
+}
+
+.fw-bold.text-center{
+    color: white;
+}
+
+.accent-divider4{
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 350px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 427px;
+}
+
+.p-4.border.rounded,
+.p-4.border.rounded p{
+    color: #000000;
+}
+
+
+/* ==================================== */
+/* Video */
 /* ==================================== */
 .full-width-contact {
     background-color: #000000 !important;
@@ -210,84 +400,23 @@ hr {
     width: 100%;
 }
 
-.full-width-contact .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000000 !important;
+.video-container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
+    
+    /* CARA BARU: Maksa rasio 16 banding 9 */
+    aspect-ratio: 16 / 9 !important; 
 }
 
-.row.gy-5>div:nth-last-child(-n + 2) {
-    border-bottom: none;
-}
-
-.p-3.fs-5 {
-    font-weight: bold !important;
-    color: #000000;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.container-md p {
-    margin-bottom: 5px;
-    color: #1a1a1a !important;
-    font-weight: 400;
-
-}
-
-.row.gy-5>.col-6 {
-    position: static;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.row.gy-5>.col-6::before {
-    content: none;
-}
-
-.full-width-contact .container.overflow-hidden {
-    position: relative;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: transparent !important;
-    overflow: visible !important;
-}
-
-.full-width-contact .container.overflow-hidden::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff9900;
-    border-radius: 8px;
-    z-index: 0;
-
-}
-
-.full-width-contact .container.overflow-hidden .row {
-    position: relative;
-    z-index: 1;
-}
-
-.row.gy-5 .p-3.fs-5 {
-    padding: 0 0 5px 0;
-    margin-bottom: 0;
-}
-
-.row.gy-5>.col-6:nth-child(odd) {
-    border-right: 1px solid #000000;
-    padding-right: 25px;
-}
-
-.row.gy-5>.col-6:nth-child(even) {
-    padding-left: 25px;
+.video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    border: none;
 }
 
 /* ==================================== */

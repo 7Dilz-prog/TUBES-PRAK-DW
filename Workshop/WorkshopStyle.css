@@ -7,34 +7,46 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
 /* ==================================== */
-/* 2. NAVBAR (PILLED EFFECT) */
+/* NAVBAR (PILLED EFFECT) */
 /* ==================================== */
 .navbar {
-    position: sticky !important;
+    position: fixed !important; 
     top: 0;
-    z-index: 1020;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent !important; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: none !important;
+}
+
+
+.navbar.nav-scrolled {
+    background-color: #000000 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.575) !important;
+    padding: 10px 0;
 }
 
 .nav-link {
-    color: #ff9900 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 15p;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
-    color: #FFF !important;
+    color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transform: translateY(-2px);
@@ -42,7 +54,7 @@ body {
 
 .nav-link.active {
     color: #000000 !important;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
     border-radius: 50px;
@@ -54,66 +66,82 @@ body {
     content: none;
 }
 
-/* Halaman Perapih  */
 
-/* Import Bootstrap Icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-/* Global Styles */
-body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+/* ==================================== */
+/* ARTICLE 
+/* ==================================== */
+article {
+    background: url(Background-1.jpeg) center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
 }
 
-/* Article Section */
-article .card {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: 2;
+}
+
+
+/* ==================================== */
+/* CARD & GARIS (ARTIKEL) */
+/* ==================================== */
+.card {
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding-top: 65px !important;
+    padding: 20px;
+    background-color: transparent !important;
+    z-index: 10;
+}
+
+.card-title {
+    color: #ffffff !important;
+    font-weight: 700;
+    opacity: 1 !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+    font-size: 50px;
+}
+
+.card-text.fs-6{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff9900;
+    width: 300px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* ==================================== */
+/* Services Section and Details */
+/* ==================================== */
+.container-fluid.service-section{
+    background-color: #1a1a1a;
+    padding: 50px;
+}
+
+.text-center.fs-9{
     color: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin-left: 50px;
-    transition: transform 0.3s ease;
+    margin-bottom: 50px;
 }
 
-article .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
 
-article .card-title {
-    font-weight: 800;
-    color: #ffa500;
-    margin-bottom: 10px;
-}
-
-article hr {
-    border-top: 5px solid #ffa500;
-    width: 100px;
-    margin: 15px 0;
-    opacity: 1;
-}
-
-article .card-text {
-    color: #e0e0e0;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Introduction Text */
-.container-xxl .fs-9 {
-    font-size: 1.1rem !important;
-    color: #555;
-    max-width: 900px;
-    margin: 0 auto 40px;
-    text-align: center;
-    padding: 0 20px;
-    line-height: 1.7;
-}
-
-/* Services Section */
 .container.px-4.text-center {
     margin-bottom: 40px;
 }
@@ -122,9 +150,8 @@ article .card-text {
     align-items: stretch;
 }
 
-/* Details/Summary Styling */
 details {
-    background: white;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     border-radius: 15px;
     padding: 25px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -142,13 +169,13 @@ details:hover {
 
 details[open] {
     border-color: #ffa500;
-    background-color: #fff9f0;
+
 }
 
 summary {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #333;
+    color: #000000;
     cursor: pointer;
     padding: 10px 0;
     list-style: none;
@@ -157,7 +184,7 @@ summary {
 }
 
 summary:hover {
-    color: #ff8c00;
+    color: white;
 }
 
 summary::after {
@@ -167,7 +194,7 @@ summary::after {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.8rem;
-    color: #ffa500;
+    color: #000000;
     font-weight: 300;
     transition: transform 0.3s ease;
 }
@@ -185,7 +212,7 @@ details ul {
 
 details li {
     padding: 8px 0;
-    color: #555;
+    color: #000000;
     border-bottom: 1px dashed #eee;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -196,18 +223,21 @@ details li:last-child {
 }
 
 details li:hover {
-    color: #ff8c00;
+    color: #ff9900;
     padding-left: 10px;
 }
 
 details li::before {
     content: '✓';
-    color: #ffa500;
+    color: #000000;
     font-weight: bold;
     margin-right: 10px;
 }
 
-/* Image Styling */
+
+/* ==================================== */
+/* Photo 1 Styling */
+/* ==================================== */
 .col img {
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -221,14 +251,17 @@ details li::before {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Feature Sections */
+
+/* ==================================== */
+/* Feature Section */
+/* ==================================== */
 .feature-section {
     background: white;
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #ffa500;
+    border-left: 5px solid #ff9900;
     transition: all 0.3s ease;
 }
 
@@ -238,7 +271,7 @@ details li::before {
 }
 
 .feature-section h3 {
-    color: #333;
+    color: #1a1a1a;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 1.5rem;
@@ -253,34 +286,35 @@ details li::before {
     left: 0;
     width: 50px;
     height: 3px;
-    background-color: #ffa500;
+    background-color: #FFD700;
 }
 
 .feature-section p {
-    color: #666;
+    color: #000000;
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 0;
 }
 
+
+/* ==================================== */
 /* Contact Section */
-.container-xxl .text-dark.text-center {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    padding: 50px 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    margin: 50px auto;
-    max-width: 800px;
+/* ==================================== */
+.container-fluid.contact{
+    background: url(Background-2.jpeg) center center/cover;
+    min-height: 70vh;
+    padding: 95px 0;
+    position: relative;
+    z-index: 1;
 }
 
-.container-xxl .text-dark.text-center p:first-child {
-    color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+
+.text-dark.text-center.d-flex.justify-content-center.align-items-center p{
+    color: white;
 }
 
 .fw-bold.fs-3 {
-    color: #ff8c00;
+    color: #FFD700 !important;
     font-size: 2.2rem !important;
     margin: 20px 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -376,7 +410,7 @@ details li::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     border-radius: 8px;
     z-index: 0;
 
@@ -399,6 +433,24 @@ details li::before {
 
 .row.gy-5>.col-6:nth-child(even) {
     padding-left: 25px;
+}
+
+
+/* ==================================== */
+/* Find Us On Maps */
+/* ==================================== */
+.text-center.fw-bold{
+    color: white;
+}
+
+.accent-divider2{
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 200px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 456px;
 }
 
 

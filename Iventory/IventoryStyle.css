@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
@@ -14,27 +15,38 @@ body {
 /* 2. NAVBAR (PILLED EFFECT) */
 /* ==================================== */
 .navbar {
-    position: sticky !important;
+    position: fixed !important; 
     top: 0;
-    z-index: 1020;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent !important; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: none !important;
+}
+
+
+.navbar.nav-scrolled {
+    background-color: #000000 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 0;
 }
 
 .nav-link {
-    color: #ff9900 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 15p;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
-    color: #FFF !important;
+    color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transform: translateY(-2px);
@@ -42,7 +54,7 @@ body {
 
 .nav-link.active {
     color: #000000 !important;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
     border-radius: 50px;
@@ -55,33 +67,92 @@ body {
 }
 
 
-/* =====================
-   HERO / INTRO CARD
-===================== */
-article .card {
-    background-color: transparent;
+/* ==================================== */
+/* ARTICLE 
+/* ==================================== */
+article {
+    background: url(BG\ 1.jpeg) center center/cover;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 2;
+}
+
+/* ==================================== */
+/* CARD & GARIS (ARTIKEL) */
+/* ==================================== */
+.card {
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding-top: 40px !important;
+    padding: 20px;
+    background-color: transparent !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 .card-title {
-    font-weight: 800;
-    letter-spacing: 2px;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 50px;
+    opacity: 1 !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
 }
 
-.card-text {
-    color: #444;
+.card-text.fs-5{
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    opacity: 1 !important;
 }
 
-/* Orange divider */
-article hr {
-    opacity: 1;
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff9900;
+    width: 300px;
+    margin: 30px 0;
+    border-radius: 8px;
 }
 
-/* =====================
+
+/* ===============
    SECTION TITLE
-===================== */
-.container-xxl>p {
+==================*/
+.container-fluid.title-1 {
     letter-spacing: 1.5px;
-    color: #111;
+    background-color: #1a1a1a;
+    padding: 50px;
+}
+.fw-bold.fs-3{
+    margin-top: 10px;
+    color:#FFD700
+}
+
+.container-fluid.bottom{
+    background-color: #000000;
+    padding: 30px;
+}
+.container-fluid.bottom p{
+    color:#ffffff
+}
+.name{
+    font-weight: bold;
+    color: #ff9900 !important;
 }
 
 /* =====================
@@ -115,95 +186,95 @@ article hr {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
-/* ==================================== */
-/* 7. Information */
-/* ==================================== */
-.full-width-contact {
-    background-color: #000000 !important;
-    padding: 50px 0;
-    width: 100%;
-}
-
-.full-width-contact .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000000 !important;
-}
-
-.row.gy-5>div:nth-last-child(-n + 2) {
-    border-bottom: none;
-}
-
-.p-3.fs-5 {
-    font-weight: bold !important;
-    color: #000000;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.container-md p {
-    margin-bottom: 5px;
-    color: #1a1a1a !important;
-    font-weight: 400;
-
-}
-
-.row.gy-5>.col-6 {
-    position: static;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+.btn-lg {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    padding: 18px;
+    border-radius: 50px !important;
+    font-size: 1.3rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3) !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
 }
 
-.row.gy-5>.col-6::before {
-    content: none;
+.btn-lg:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4) !important;
+    background: linear-gradient(135deg, #1da851, #0d7d5a) !important;
 }
 
-.full-width-contact .container.overflow-hidden {
-    position: relative;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: transparent !important;
-    overflow: visible !important;
+.btn-lg i {
+    font-size: 1.8rem;
+    margin-right: 15px;
 }
 
-.full-width-contact .container.overflow-hidden::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff9900;
-    border-radius: 8px;
-    z-index: 0;
 
-}
 
-.full-width-contact .container.overflow-hidden .row {
+/* ==================================== */
+/* 7. Information */
+/* ==================================== */
+/* Container Utama */
+.full-width-contact {
+    background: url(BG\ 2.jpeg) center center/cover;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
     position: relative;
     z-index: 1;
 }
 
-.row.gy-5 .p-3.fs-5 {
-    padding: 0 0 5px 0;
-    margin-bottom: 0;
+.full-width-contact .fs-5 {
+    color: #FFD700; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px !important;
 }
 
-.row.gy-5>.col-6:nth-child(odd) {
-    border-right: 1px solid #000000;
-    padding-right: 25px;
+/* Styling Teks Paragraf */
+.full-width-contact p {
+    color: white; /* Abu-abu terang agar mata nyaman */
+    line-height: 1.6;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
 }
 
-.row.gy-5>.col-6:nth-child(even) {
-    padding-left: 25px;
+.full-width-contact .col-6 {
+    padding: 30px;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.575); ;
 }
 
+/* Efek Hover saat Mouse di atas kolom */
+.full-width-contact .col-6:hover {
+    transform: translateY(-5px);
+}
+
+.full-width-contact .col-6:hover p {
+    color: #ffffff; /* Teks jadi putih terang saat di-hover */
+}
+
+/* Khusus untuk Email agar terlihat seperti link */
+.full-width-contact .col-6 p:last-child {
+    font-weight: 500;
+    color: #ff9900;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsif untuk HP agar tidak sempit */
+@media (max-width: 768px) {
+    .full-width-contact .col-6 {
+        width: 100%; /* Jadi satu kolom kalau di HP */
+        text-align: center;
+    }
+}
 
 /* ==================================== */
 /* 8. FOOTER */

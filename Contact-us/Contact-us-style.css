@@ -12,34 +12,46 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
 /* ==================================== */
-/* 2. NAVBAR (PILLED EFFECT) */
+/* NAVBAR (PILLED EFFECT) */
 /* ==================================== */
 .navbar {
-    position: sticky !important;
+    position: fixed !important; 
     top: 0;
-    z-index: 1020;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: transparent !important; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: none !important;
+}
+
+
+.navbar.nav-scrolled {
+    background-color: #000000 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.575) !important;
+    padding: 10px 0;
 }
 
 .nav-link {
-    color: #ff9900 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 15p;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
-    color: #FFF !important;
+    color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transform: translateY(-2px);
@@ -47,7 +59,7 @@ body {
 
 .nav-link.active {
     color: #000000 !important;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
     border-radius: 50px;
@@ -58,6 +70,36 @@ body {
 .nav-link.active::after {
     content: none;
 }
+
+
+/* ==================================== */
+/* ARTICLE 
+/* ==================================== */
+article {
+    background: url(BG-01.jpeg) center center/cover;
+    min-height: 50vh;
+    align-items: center;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.text-center.fs-3.fw-bold {
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+}
+
+.accent-divider {
+    border: none;
+    height: 0;
+    border-top: 6px solid #ff9900;
+    width: 500px;
+    margin: 20px 0;
+    margin-left: 420px;
+    border-radius: 8px;
+}
+
+
 
 /* =========================
    SOCIAL MEDIA BOX
@@ -114,10 +156,18 @@ body {
    CONTACT INFO SECTION
 ========================= */
 .bg-dark-custom {
-    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
-    /* Abu-abu lembut */
-    border-radius: 20px;
+    background-color: #1a1a1a;
     padding: 50px 30px;
+}
+
+.accent-divider2 {
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 500px;
+    margin: 20px 0;
+    margin-left: 412px;
+    border-radius: 8px;
 }
 
 .contact-info-card {
@@ -131,14 +181,14 @@ body {
 
 .contact-info-card:hover {
     transform: translateY(-8px);
-    border-top: 4px solid #ffa500;
+    border-top: 4px solid #000000;
 }
 
 .icon-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ffa500, #ff8c00);
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,15 +213,35 @@ body {
 /* =========================
    FAQ
 ========================= */
+.container-fluid.FAQ-section{
+    background: url(BG-02.jpeg) center center/cover;
+    padding: 70px;
+    align-items: center !important;
+}
+
+.fw-bold.text-center{
+    text-align: center !important;
+    color: white !important;
+}
 .accordion {
     max-width: 800px;
     margin: auto;
-    background-color: #e5e7eb;
+    padding: 0 15px;
     border-radius: 12px;
 }
 
+.accent-divider3 {
+    border: none;
+    height: 0;
+    border-top: 6px solid #FFD700;
+    width: 300px;
+    margin: 20px 0;
+    margin-left: 450px;
+    border-radius: 8px;
+}
+
 .accordion-item {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     border: none;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -186,11 +256,25 @@ body {
 .accordion-button {
     font-weight: 600;
     padding: 20px;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #fff4e5;
-    color: #ff8c00;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
+    color: #ff9900;
+}
+
+
+/* ==================================== */
+/* Maps */
+/* ==================================== */
+.container-fluid.map-section{
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.text-center.fw-bold.title{
+    color: #ff9900 !important;
 }
 
 
@@ -258,7 +342,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );;
     border-radius: 8px;
     z-index: 0;
 
