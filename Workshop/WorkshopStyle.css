@@ -66,7 +66,90 @@ body {
     content: none;
 }
 
+/* navbar baru */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important; }
 
+.navbar-toggler:focus {
+    box-shadow: none !important; }
+
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important; }
+
+    .navbar-brand img {
+        width: 120px !important; 
+        height: auto !important; }
+
+    .navbar-collapse {
+        background-color: #000000 !important; /* Hitam Solid */
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #FFD700;
+        z-index: 1000; }
+
+    .navbar-nav {
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        text-align: center; }
+
+    .nav-item {
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2); }
+    
+    .nav-link {
+        color: #ffffff !important;
+        display: block; }
+    
+    .nav-link:hover {
+        color: #FFD700 !important; }
+    
+    .nav-link.active {
+        color: #ffffff !important; }
+
+    .accent-divider2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 150px !important; }
+
+    article .card {
+        width: auto !important;       
+        margin: 20px 15px !important;  }
+    
+    .card-title {
+        font-size: 35px !important; }
+
+    .col img {
+        height: 200px !important; } }
+
+@media (max-width: 768px) {
+    /* Footer Info Workshop jadi 1 kolom ke bawah */
+    .row.gy-5 > .col-6 {
+        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        margin-bottom: 20px; } }
+
+/* Animation for details */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); }
+    to {
+        opacity: 1;
+        transform: translateY(0); } }
+
+details[open] ul {
+    animation: slideDown 0.5s ease; }
 
 /* ==================================== */
 /* ARTICLE 

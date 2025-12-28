@@ -24,52 +24,107 @@ body {
     padding: 15px 0;
     background-color: transparent !important; 
     transition: all 0.4s ease-in-out;
-    box-shadow: none !important;
-}
-
+    box-shadow: none !important; }
 
 .navbar.nav-scrolled {
     background-color: #000000 !important; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
-    padding: 10px 0;
-}
+    padding: 10px 0; }
 
 .nav-link {
     color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15p;
+    padding: 10px 15px;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
-    font-size: 1.1rem !important;
-}
+    font-size: 1.1rem !important; }
 
 .nav-link:hover {
     color: #ff9900 !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
-    transform: translateY(-2px);
-}
+    transform: translateY(-2px); }
 
 .nav-link.active {
     color: #000000 !important;
     background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     transform: none;
     font-weight: 600;
-    border-radius: 50px;
-}
+    border-radius: 50px; }
 
 .nav-link::after,
 .nav-link:hover::after,
 .nav-link.active::after {
-    content: none;
-}
+    content: none; }
 
+/* navbar dropdown */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important; }
 
-/* ==================================== */
-/* ARTICLE 
-/* ==================================== */
+.navbar-toggler:focus {
+    box-shadow: none !important; }
+
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important; }
+
+    .navbar-brand img {
+        width: 120px !important; 
+        height: auto !important; }
+
+    .navbar-collapse {
+        background-color: #000000 !important; /* Hitam Solid */
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #FFD700;
+        z-index: 1000; }
+
+    .navbar-nav {
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        text-align: center; }
+
+    .nav-item {
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2); }
+    
+    .nav-link {
+        color: #ffffff !important;
+        display: block; }
+    
+    .nav-link:hover {
+        color: #FFD700 !important; }
+    
+    .nav-link.active {
+        color: #ffffff !important; }
+
+    .accent-divider2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 150px !important; }
+
+    article .card {
+        width: auto !important;       
+        margin: 20px 15px !important;  }
+    
+    .card-title {
+        font-size: 35px !important; }
+
+    .col img {
+        height: 200px !important; } }
+
+/* article */
 article {
     background: url(BG\ 1.jpeg) center center/cover;
     min-height: 95vh;
@@ -77,10 +132,10 @@ article {
     align-items: center;
     padding: 50px 0;
     position: relative;
-    z-index: 1;
-}
+    z-index: 1; }
 
 article::before {
+    pointer-events: none;
     content: '';
     position: absolute;
     top: 0;
@@ -88,12 +143,9 @@ article::before {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.432);
-    z-index: 2;
-}
+    z-index: 2; }
 
-/* ==================================== */
-/* CARD & GARIS (ARTIKEL) */
-/* ==================================== */
+/* card dan garis article */
 .card {
     color: white !important;
     border: none;
@@ -102,23 +154,20 @@ article::before {
     padding: 20px;
     background-color: transparent !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    z-index: 10;
-}
+    z-index: 10; }
 
 .card-title {
     color: #ffffff !important;
     font-weight: 700;
     font-size: 50px;
     opacity: 1 !important;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
-}
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6); }
 
 .card-text.fs-5{
     color: #FFD700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     line-height: 1.6;
-    opacity: 1 !important;
-}
+    opacity: 1 !important; }
 
 .accent-divider {
     border: none;
@@ -126,65 +175,226 @@ article::before {
     border-top: 6px solid #ff9900;
     width: 300px;
     margin: 30px 0;
-    border-radius: 8px;
-}
+    border-radius: 8px; }
 
-
-/* ===============
-   SECTION TITLE
-==================*/
+/* section title */
 .container-fluid.title-1 {
     letter-spacing: 1.5px;
     background-color: #1a1a1a;
-    padding: 50px;
-}
+    padding: 50px; }
+
 .fw-bold.fs-3{
     margin-top: 10px;
-    color:#FFD700
-}
+    color:#FFD700 }
 
 .container-fluid.bottom{
     background-color: #000000;
-    padding: 30px;
-}
+    padding: 30px; }
+
 .container-fluid.bottom p{
-    color:#ffffff
-}
+    color:#ffffff }
+
 .name{
     font-weight: bold;
-    color: #ff9900 !important;
+    color: #ff9900 !important; }
+
+@media (max-width: 576px) {
+  article {
+    min-height: 85vh;
+    padding: 30px 15px;
+    align-items: center; }
+  article .card {
+    padding: 50px 15px !important;
+    text-align: center; }
+  .card-title {
+    font-size: 30px;
+    line-height: 1.2; }
+  .card-text.fs-5 {
+    font-size: 10px;
+    line-height: 1.5; }
+  .accent-divider {
+    width: 200px;
+     margin: 18px auto; }
+  .container-fluid.title-1 {
+    padding: 25px 15px;
+    /* text-align: center; } */ }
+  .fw-bold.fs-3 {
+    font-size: 10px; }
+  .container-fluid.bottom {
+    padding: 20px 15px; }
 }
 
-/* =====================
-   IMAGE GRID
-===================== */
+
+
+/* image grid */
 .row.g-0 img {
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
+    transition: transform 0.5s ease, filter 0.5s ease; }
 
 .row.g-0 img:hover {
     transform: scale(1.05);
-    filter: brightness(1.1);
-}
+    filter: brightness(1.1); }
 
-/* menjaga tinggi gambar konsisten */
 .row.g-0 .col-4 {
     height: 300px;
-    overflow: hidden;
-}
+    overflow: hidden; }
 
-/* =====================
-   CONTACT SECTION
-===================== */
+.item-mobil img { /* Efek Hover Gambar */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease; }
+
+.item-mobil:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    z-index: 10; }
+
+@media (max-width: 1025px) {
+    .row.g-0 .col-4 {
+        height: 200px;
+        max-width: 100%; } }
+
+@media (max-width: 768px) {
+  .row.g-0 .col-4 {
+    height: 150px;  
+    max-width: 90%; } }
+
+@media (max-width: 426px) {
+  .row.g-0 .col-4 {
+    height: 100px;      
+    max-width: 50%;      
+    margin: 0 auto;      } }
+
+/* modal pop up */
+.modal {
+  align-items: center !important;
+  justify-content: center !important; }
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+
+#modalImg {
+  width: 150%;
+  height: 300px;
+  object-fit: cover;
+  max-height: 415px; }  /* hilangkan batas tinggi */
+
+.modal-body .col-md-5 {
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.4;}
+
+@media (min-width: 578px) and (max-width: 768px) {
+  .modal-content { 
+    width: 100%;
+    height: 70vh;          
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center; }
+  .modal-body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+ .modal-body .col-md-7, .modal-body .col-md-5 { 
+    flex: 0 0 50%; 
+    max-width: 50%; } 
+  .modal-body .col-md-5 { 
+    font-size: 0.9rem;  
+    line-height: 1.4; } }
+
+@media (max-width: 576px) {
+  .modal {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important; }
+  .modal-dialog {
+    width: 80%;
+    margin: 0 !important; }
+  .modal-body { 
+    padding: 1rem; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; }
+  .modal-body .row {
+    flex-direction: column; 
+    align-items: center;}
+  .modal-body .col-md-7 {
+    padding: 0;
+    width: 100%;
+    height: 120px; }
+  #modalImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .modal-content { 
+    width: 100%;
+    height: 80vh;          
+    max-height: 80vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 12px; }
+  .modal-body .col-md-5 {
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-height: 40vh; }
+  .modal-body .col-md-7, 
+  .modal-body .col-md-5 { 
+        flex: 1 1 50%; 
+        max-height: 50%; 
+        width: 100%; }}
+   
+/* @media (min-width: 770px) {
+  .modal-dialog-centered {
+    min-height: calc(100% - 1rem); }
+  .modal-content { 
+    height: 50vh;          
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center; }
+  .modal-body {
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    height: 100%; }
+  .modal-body .col-md-7 {
+    max-height: 200%;
+    padding: 0; } } */
+
+/* scrollbar pop up*/
+#modalDesc b { 
+    color: #FFD700; }
+
+#carModal .col-md-5::-webkit-scrollbar {
+  width: 8px; }
+
+#carModal .col-md-5::-webkit-scrollbar-track {
+  background: #222;       
+  border-radius: 4px; }
+
+#carModal .col-md-5::-webkit-scrollbar-thumb {
+  background-color: #ff9900; 
+  border-radius: 4px; }
+
+#carModal .col-md-5::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9900;  }
+
+#carModal .col-md-5 {
+  scrollbar-width: thin;
+  scrollbar-color: #ffc107 #222; }
+
+/* contact section */
 .container-xxl .btn {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
 .container-xxl .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-}
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3); }
 
 .btn-lg {
     background: linear-gradient(135deg, #25D366, #128C7E) !important;
@@ -196,35 +406,38 @@ article::before {
     border: none !important;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; }
 
 .btn-lg:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4) !important;
-    background: linear-gradient(135deg, #1da851, #0d7d5a) !important;
-}
+    background: linear-gradient(135deg, #1da851, #0d7d5a) !important; }
 
 .btn-lg i {
     font-size: 1.8rem;
-    margin-right: 15px;
-}
+    margin-right: 15px; }
+
+@media (max-width: 426px) { 
+    .btn-lg { 
+        padding: 10px 16px; /* lebih kecil di HP */ 
+        font-size: 0.9rem !important; 
+        border-radius: 30px !important; } 
+    .btn-lg i { 
+        font-size: 1rem; 
+        margin-right: 8px; } }
 
 
-
-/* ==================================== */
-/* 7. Information */
-/* ==================================== */
+/* information */
 /* Container Utama */
 .full-width-contact {
     background: url(BG\ 2.jpeg) center center/cover;
     min-height: 95vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 50px 0;
     position: relative;
-    z-index: 1;
-}
+    z-index: 1; }
 
 .full-width-contact .fs-5 {
     color: #FFD700; 
@@ -234,56 +447,76 @@ article::before {
     border-bottom: 2px solid rgba(255, 215, 0, 0.3);
     display: inline-block;
     margin-bottom: 15px;
-    padding-bottom: 5px !important;
-}
+    padding-bottom: 5px !important; }
 
-/* Styling Teks Paragraf */
 .full-width-contact p {
-    color: white; /* Abu-abu terang agar mata nyaman */
+    color: white; 
     line-height: 1.6;
     margin-bottom: 5px;
-    transition: color 0.3s ease;
-}
+    transition: color 0.3s ease; }
 
 .full-width-contact .col-6 {
-    padding: 30px;
-    transition: transform 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.575); ;
-}
+    flex: 1 1 50%; 
+    max-width: 50%; 
+    padding: 30px; 
+    background-color: rgba(0, 0, 0, 0.575); 
+    transition: transform 0.3s ease; }
 
-/* Efek Hover saat Mouse di atas kolom */
 .full-width-contact .col-6:hover {
-    transform: translateY(-5px);
-}
+    transform: translateY(-5px); }
 
 .full-width-contact .col-6:hover p {
-    color: #ffffff; /* Teks jadi putih terang saat di-hover */
-}
+    color: #ffffff;  }
 
-/* Khusus untuk Email agar terlihat seperti link */
 .full-width-contact .col-6 p:last-child {
     font-weight: 500;
     color: #ff9900;
     cursor: pointer;
-    margin-top: 10px;
-}
+    margin-top: 10px; }
 
-/* Responsif untuk HP agar tidak sempit */
-@media (max-width: 768px) {
-    .full-width-contact .col-6 {
-        width: 100%; /* Jadi satu kolom kalau di HP */
+.full-width-contact .col-full { 
+    flex: 1 1 100%; 
+    max-width: 100%; }
+
+html, body {
+  overflow-x: hidden; }
+
+@media (max-width: 426px) {  
+    .full-width-contact .col-6 { 
+        flex: 1 1 100%;
+        max-width: 100%; 
+        padding: 10px; 
         text-align: center;
-    }
-}
+        box-sizing: border-box; } 
+    .full-width-contact .fs-5 { 
+        font-size: 0.9rem !important; 
+        letter-spacing: 1px; 
+        margin-bottom: 5px; } 
+    .full-width-contact p { 
+        font-size: 0.8rem; 
+        line-height: 1.4; 
+        margin-bottom: 4px; } 
+    .full-width-contact .container, .full-width-contact .container-md { 
+        padding-left: 10px; 
+        padding-right: 10px; } 
+    .full-width-contact .col-6 { 
+        text-align: center; }
+    .full-width-contact .row { 
+        gap: 0px; 
+        margin-left: 0; 
+        margin-right: 0;  }
+    .full-width-contact .col-full { 
+        flex: 1 1 100%; 
+        max-width: 100%; }
+  .full-width-contact {
+    padding: 20px 0;  } }
 
-/* ==================================== */
-/* 8. FOOTER */
-/* ==================================== */
+
+/* footer */
 footer {
     background-color: #1a1a1a;
     color: #FFD700;
     padding: 20px;
     margin-top: 0;
     font-size: 0.9rem;
-    text-align: center;
-}
+    text-align: center; }
