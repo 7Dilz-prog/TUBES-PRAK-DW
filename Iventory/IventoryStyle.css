@@ -310,7 +310,7 @@ article::before {
     justify-content: center !important; }
   .modal-dialog {
     width: 80%;
-    margin: auto !important; } }
+    margin: auto !important; } 
   .modal-body { 
     padding: 1rem; 
     height: 100%; 
