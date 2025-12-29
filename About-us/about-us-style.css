@@ -1,6 +1,3 @@
-/* =====================
-   GLOBAL STYLE
-===================== */
 :root {
     --primary: #FFD700;
     --dark: #000000;
@@ -9,9 +6,6 @@
     --text-muted: #666;
 }
 
-/* ==================================== */
-/* RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
-/* ==================================== */
 body {
     background-color: #0d0d0d;
     color: #f0f0f0;
@@ -21,10 +15,6 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
-
-/* ==================================== */
-/* NAVBAR (PILLED EFFECT) */
-/* ==================================== */
 .navbar {
     position: fixed !important; 
     top: 0;
@@ -37,7 +27,6 @@ body {
     transition: all 0.4s ease-in-out;
     box-shadow: none !important;
 }
-
 
 .navbar.nav-scrolled {
     background-color: #000000 !important; 
@@ -77,10 +66,6 @@ body {
     content: none;
 }
 
-
-/* ==================================== */
-/* ARTICLE 
-/* ==================================== */
 article {
     background: url(Background\ 01.jpeg) center center/cover;
     min-height: 100vh;
@@ -102,10 +87,6 @@ article::before {
     z-index: 2;
 }
 
-
-/* ==================================== */
-/* 4. CARD & GARIS (ARTIKEL) */
-/* ==================================== */
 .card {
     color: white !important;
     border: none;
@@ -126,7 +107,6 @@ article::before {
     font-size: 50px;
 }
 
-
 .accent-divider {
     border: none;
     height: 0;
@@ -136,10 +116,6 @@ article::before {
     border-radius: 8px;
 }
 
-
-/* =====================
-   IMAGE & ABOUT SECTION 2
-===================== */
 .col-6 img {
     transition: transform 0.6s ease;
 }
@@ -185,12 +161,6 @@ article::before {
     color:#ff9900
 }
 
-
-/*
- * -------------------
- * GENERAL TIMELINE STYLES
- * -------------------
- */
 .timeline-container {
     padding: 10px 0;
     background: url(Background\ 02.jpeg) center center/cover;
@@ -225,11 +195,6 @@ article::before {
     color: #FFD700;
 }
 
-/*
- * -------------------
- * TIMELINE ITEM STYLES
- * -------------------
- */
 .timeline-item {
     margin-bottom: 30px;
     position: relative;
@@ -265,11 +230,6 @@ article::before {
     margin-left: -10px; 
 }
 
-/*
- * -------------------
- * LEFT & RIGHT ALIGNMENT
- * -------------------
- */
 .timeline-item.right {
     padding-left: 55%; 
 }
@@ -298,7 +258,6 @@ article::before {
     border-color: transparent transparent transparent #ffffff; 
 }
 
-/* Untuk Item Kiri */
 .timeline-item.left .timeline-content::before {
     content: " ";
     position: absolute;
@@ -309,10 +268,6 @@ article::before {
     border-color: transparent #ffffff transparent transparent;
 }
 
-
-/* =====================
-   TEAM SECTION
-===================== */
 .container-fluid.text-center{
     background-color: #1a1a1a;
     padding: 60px
@@ -363,9 +318,6 @@ article::before {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* ==================================== */
-/* WHat Our Customers Say */
-/* ==================================== */
 .container-fluid2{
     background: url(Background\ 03.jpeg) center center/cover;
     padding: 70px;
@@ -390,10 +342,6 @@ article::before {
     color: #000000;
 }
 
-
-/* ==================================== */
-/* Video */
-/* ==================================== */
 .full-width-contact {
     background-color: #000000 !important;
     padding: 50px 0;
@@ -408,7 +356,7 @@ article::before {
     overflow: hidden;
     box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
     
-    /* CARA BARU: Maksa rasio 16 banding 9 */
+    /* Maksa rasio 16 banding 9 */
     aspect-ratio: 16 / 9 !important; 
 }
 
@@ -419,9 +367,6 @@ article::before {
     border: none;
 }
 
-/* ==================================== */
-/* FOOTER */
-/* ==================================== */
 footer {
     background-color: #1a1a1a;
     color: #FFD700;
@@ -431,9 +376,6 @@ footer {
     text-align: center;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
 @media (max-width: 992px) {
     .timeline::before {
         left: 8px;
@@ -464,4 +406,124 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+/* TAMBAHAN RESPONSIF */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+.navbar-toggler {
+    border: none !important;            
+    outline: none !important;           
+    box-shadow: none !important;        
+    background: transparent !important; 
+    padding: 0 !important;              
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ATURAN HP & TABLET (< 992px) */
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .navbar-brand img { width: 120px !important; height: auto !important; }
+
+    /* Menu Dropdown */
+    .navbar-collapse {
+        background-color: #000000 !important;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #FFD700;
+        z-index: 1000;
+    }
+    .navbar-nav {
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    }
+    
+    .nav-link { 
+        color: #ffffff !important; 
+        display: block; 
+    }
+    
+    .nav-link.active { 
+        color: #ffffff !important;
+        background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% ) !important;
+        border-radius: 50px;
+        font-weight: bold !important;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9) !important;
+    }
+    
+    .nav-link:hover { color: #FFD700 !important; }
+    article .card { width: 90% !important; margin: 0 auto !important; }
+    
+    article .card-body {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .card-title { font-size: 35px !important; }
+    .accent-divider {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 150px !important;
+    }
+    .fw-bold2 { text-align: left !important; }
+    
+    .accent-divider2 {
+        margin-left: 0 !important; 
+        margin-right: auto !important;
+        width: 150px !important;
+    }
+
+    /* Garis Kuning Lainnya */
+    .accent-divider3, .accent-divider4 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 150px !important;
+    }
+
+    /* Jarak Testimoni */
+    .container-fluid2 .col-md-4 { margin-bottom: 24px !important; }
+
+    /* Timeline Responsif */
+    .timeline::before { left: 20px !important; }
+    
+    .timeline-item.right, .timeline-item.left {
+        width: 100% !important;
+        padding-left: 50px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    .timeline-item::after { left: 20px !important; } 
+
+    .timeline-item.right .timeline-content::before,
+    .timeline-item.left .timeline-content::before {
+        left: -12px !important;
+        right: auto !important;
+        border-width: 10px 12px 10px 0 !important;
+        border-color: transparent #FFD700 transparent transparent !important;
+    }
+    .timeline-content { width: 100% !important; float: none !important; }
+
+    /* Gambar & Teks Tumpuk */
+    .section-row { flex-direction: column !important; }
+    .section-row .col-lg-6, .section-row .col-6 { width: 100% !important; }
+    .section-row img { height: 300px !important; order: -1 !important; }
+    .section-row .card { order: 2 !important; }
 }

@@ -455,64 +455,22 @@ details li::before {
 
 
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    article .card {
-        margin-left: 20px;
-        width: 90% !important;
-    }
+/* ========================================================== */
+/* TAMBALAN RESPONSIF (Code Tambahan di Paling Bawah)      */
+/* ========================================================== */
 
-    .col img {
-        height: 300px;
-    }
-
-    .row.gy-5>div {
-        border-right: none;
-    }
-
-    .feature-section {
-        margin: 0 15px 25px;
-    }
+/* 1. HILANGKAN KOTAK PUTIH PADA TOMBOL (FIX UTAMA) */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
 }
 
-@media (max-width: 768px) {
-    article .card {
-        margin: 20px auto;
-        width: 95% !important;
-    }
-
-    .container-xxl .fs-9 {
-        font-size: 1rem !important;
-        padding: 0 15px;
-    }
-
-    .col img {
-        height: 250px;
-        margin-bottom: 20px;
-    }
-
-    summary {
-        font-size: 1.2rem;
-    }
-
-    .fw-bold.fs-3 {
-        font-size: 1.8rem !important;
-    }
-
-    .btn-lg {
-        padding: 15px 30px !important;
-        font-size: 1.1rem !important;
-    }
-
-    .feature-section {
-        padding: 20px;
-    }
-
-    .feature-section h3 {
-        font-size: 1.3rem;
-    }
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }
-
 /* Animation for details */
 @keyframes slideDown {
     from {

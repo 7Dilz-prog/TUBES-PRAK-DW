@@ -1,58 +1,54 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
-    
-    // logika bayangan saar di scroll navbar
-    if (navbar) {
-        Object.assign(navbar.style, {
-            position: 'fixed',
-            top: '0',
-            width: '100%',
-            zIndex: '1000',
-            backgroundColor: 'black',
-            transition: 'box-shadow 0.3s ease'
-        });
 
-        // logika Bayangan saat Scroll
+    // 1. Logika Navbar berubah warna saat Scroll
+    if (navbar) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                navbar.style.boxShadow = '0 4px 10px rgba(0,0,0,0.5)';
+            // Jika discroll lebih dari 50px ke bawah
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
             } else {
-                navbar.style.boxShadow = 'none';
+                // Jika kembali ke paling atas
+                navbar.classList.remove('nav-scrolled');
             }
         });
     }
 
-    // logika scroll navbar
-    const carouselContainer = document.getElementById('carouselExampleCaptions');
-    const nextButton = document.querySelector('.carousel-control-next');
-    
-    const slideInterval = 3000; 
-    let autoSlide; // variabel buat nyimpen timer
-    if (carouselContainer && nextButton) {
-        const startSlide = () => {
-            autoSlide = setInterval(() => {
-                nextButton.click();
-            }, slideInterval);
-        };
+    // 2. Logika Carousel (Optional, Bootstrap sudah handle otomatis sebenarnya)
+    const myCarousel = document.querySelector('#carouselExampleCaptions');
+    if (myCarousel) {
+        // Inisialisasi carousel dengan interval 5 detik
+        const carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000,
+            ride: 'carousel'
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
 
-        // untuk stop slide (pause)
-        const stopSlide = () => {
-            clearInterval(autoSlide);
-        };
+    // 1. Logika Navbar berubah warna saat Scroll
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            // Jika discroll lebih dari 50px ke bawah
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                // Jika kembali ke paling atas
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    }
 
-        startSlide();
-
-        // fitur pause saat mouse nempel
-        carouselContainer.addEventListener('mouseenter', stopSlide);
-        carouselContainer.addEventListener('mouseleave', startSlide);
+    // 2. Logika Carousel (DIPERBAIKI)
+    const myCarousel = document.querySelector('#carouselExampleCaptions');
+    if (myCarousel) {
+        // Inisialisasi carousel dengan opsi lengkap
+        const carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000,     // Ganti gambar tiap 5 detik
+            ride: 'carousel',   // Mulai otomatis
+            pause: 'hover',     // BERHENTI saat di-hover (PC) atau disentuh (HP)
+            touch: true         // Mengizinkan swipe kiri-kanan di HP
+        });
     }
 });
-
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) { 
-      navbar.classList.add('nav-scrolled');
-    } else {
-      navbar.classList.remove('nav-scrolled');
-    }
-  });
+});
