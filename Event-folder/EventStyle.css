@@ -1,7 +1,9 @@
-/* ==================================== */
-/* 1. RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
-/* ==================================== */
-body {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
     background-color: #0d0d0d;
     color: #f0f0f0;
     margin: 0;
@@ -10,10 +12,7 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
-
-/* ==================================== */
-/* NAVBAR (PILLED EFFECT) */
-/* ==================================== */
+/* NAVBAR */
 .navbar {
     position: fixed !important; 
     top: 0;
@@ -66,10 +65,7 @@ body {
     content: none;
 }
 
-
-/* ==================================== */
-/* ARTICLE 
-/* ==================================== */
+/* ARTICLE  */
 article {
     background: url(Background\ one.jpeg) center center/cover;
     min-height: 100vh;
@@ -91,10 +87,6 @@ article::before {
     z-index: 2;
 }
 
-
-/* ==================================== */
-/* CARD & GARIS (ARTIKEL) */
-/* ==================================== */
 .card {
     color: white !important;
     border: none;
@@ -106,12 +98,13 @@ article::before {
     
 }
 
-.card-title.fs-2{
-    color: #ffffff !important;
-    font-weight: 700;
-    opacity: 1 !important;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
-}
+.card-title.fs-2 {
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+        writing-mode: horizontal-tb !important; /* Memastikan teks tidak vertikal */
+        letter-spacing: 5px;
+    }
 
 .card-text.fs-6{
     color: #ff9900;
@@ -124,12 +117,10 @@ article::before {
     width: 190px;
     margin: 10px 0;
     border-radius: 8px;
+    margin: 10px auto !important; 
+        width: 150px !important;
 }
 
-
-/* ==================================== */
-/* Events card */
-/* ==================================== */
 .container.text-center{
     margin-top: 70px;
 }
@@ -153,13 +144,12 @@ article::before {
     font-weight: bold;
 }
 
-
-/* ==================================== */
 /* Umcoming Events */
-/* ==================================== */
 .container-fluid.upcoming{
     background-color: #1a1a1a;
     padding: 50px 0;
+    max-width: 100% !important;
+    overflow-x: hidden;
 }
 
 .fw-bold.text-center{
@@ -241,9 +231,7 @@ article::before {
     left: 100%;
 }
 
-/* ==================================== */
 /* Documentary Video */
-/* ==================================== */
 .full-width-contact {
     background-color: #000000 !important;
     padding: 50px 0;
@@ -258,7 +246,7 @@ article::before {
     overflow: hidden;
     box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
     
-    /* CARA BARU: Maksa rasio 16 banding 9 */
+    /* Maksa rasio 16 banding 9 */
     aspect-ratio: 16 / 9 !important; 
 }
 
@@ -274,9 +262,7 @@ article::before {
     color: white;
 }
 
-/* ==================================== */
 /* 8. FOOTER */
-/* ==================================== */
 footer {
     background-color: #1a1a1a;
     color: #FFD700;
@@ -284,4 +270,168 @@ footer {
     margin-top: 0;
     font-size: 0.9rem;
     text-align: center;
+}
+
+/* KEBAB MENU (3 DOT) */
+
+.kebab-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.kebab-menu span {
+    width: 6px;
+    height: 6px;
+    background: #FFD700;
+    border-radius: 50%;
+}
+
+/* FULLSCREEN MENU */
+.mobile-menu {
+    position: fixed;
+    top: 620px; 
+    left: 50%;
+    transform: translate(-50%, -150%); 
+    perspective: 1000px;
+    width: 90%;
+    max-width: 500px;
+    height: 70%;
+    background: #000000;
+    z-index: 2000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Padding agar semua menu masuk ke dalam bingkai */
+    padding: 20px 0; 
+    border-radius: 20px;
+    border: 1px solid #FFD700;
+    
+    clip-path: inset(0 0 100% 0); 
+    opacity: 0;
+    pointer-events: none;
+    
+    /* Transisi clip-path menciptakan efek 'menggulung' */
+    transition: clip-path 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+}   
+
+.mobile-menu a {
+    width: 90%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 18px 0;
+    margin: 2px 0;
+    transition: 0.3s;
+    /* Garis pemisah antar menu */
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    transform: translateY(-10px);
+    transition: transform 0.8s ease, color 0.3s ease;
+}
+
+.mobile-menu.show a {
+    transform: translateY(0);
+}
+
+.mobile-menu a:first-child {
+    border-top: none;
+}
+
+.mobile-menu a.active {
+    background: linear-gradient(135deg, #FFD700 0%, #ff9900 100%);
+    color: #000 !important;
+    border-radius: 50px;
+    border-top: none; 
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+    margin: 10px 0; 
+}
+
+.mobile-menu a:hover:not(.active) {
+    color: #FFD700;
+    letter-spacing: 1px;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    pointer-events: auto;
+    clip-path: inset(0 0 0 0); 
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-menu {
+        display: none !important;
+    }
+
+    .kebab-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .card-title {
+        font-size: 1.3rem !important;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .event-cards .card {
+        padding: 15px;
+    }
+}
+
+.event-cards .row {
+    display: flex;
+    align-items: stretch; 
+}
+
+.event-cards .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Hilangkan padding top yang kegedean kalo ada biar lebih rapi */
+    padding-top: 0 !important; 
+    
+}
+
+.event-cards .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    justify-content: space-between; /* Menjaga jarak antar elemen */
+}
+
+.event-cards .btn {
+    margin-top: auto;
+    width: 100%;
+}
+
+.event-cards .col:first-child .card-img-top {
+    /* Gunakan margin-top negatif untuk menarik gambar ke atas */
+    margin-top: 20px;
+}
+
+.event-cards .col:nth-child(3) .card-img-top {
+    margin-top: 15px !important;
+    border-radius: 12px;
+    height: 220px;
+    object-fit: cover;
 }

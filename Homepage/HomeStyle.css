@@ -1,20 +1,23 @@
-/* ==================================== */
-/* 1. RESET DAN FONT UNIVERSAL (DITINGKATKAN) */
-/* ==================================== */
-body {
-    background-color: #0d0d0d;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif !important;
+/* ========================================================== */
+/* [BAGIAN 1] CODE ASLI TEMAN LU (MASIH UTUH)              */
+/* ========================================================== */
+
+html {
+    background-color: #0d0d0d !important;
+    height: auto;
 }
 
+body {
+    background-color: #0d0d0d !important;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
+    color: #f0f0f0;
+}
 
-/* ==================================== */
-/* 2. NAVBAR (PILLED EFFECT) */
-/* ==================================== */
-/* NAVBAR UTAMA */
 .navbar {
     position: fixed !important; 
     top: 0;
@@ -28,7 +31,6 @@ body {
     box-shadow: none !important;
 }
 
-
 .navbar.nav-scrolled {
     background-color: #000000 !important; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
@@ -39,7 +41,7 @@ body {
     color: #ffffff !important;
     font-weight: 700 !important;
     margin: 0 5px;
-    padding: 10px 15p;
+    padding: 10px 15px; 
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease-out;
@@ -67,16 +69,17 @@ body {
     content: none;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
 
-/* ==================================== */
-/* ARTICLE 
-/* ==================================== */
 article {
     background: no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0 50px 0;
     transition: background-image 5s ease-in-out;
     animation: gantiBackground 20s infinite;
     position: relative;
@@ -94,48 +97,38 @@ article::before {
     z-index: 2;
 }
 
-
-
 @keyframes gantiBackground {
-
-    /* ... (keyframes tidak diubah) ... */
-    0% {
-        background-image: url('Background 1.jpeg');
-    }
-
-    16.66% {
-        background-image: url('Background 1.jpeg');
-    }
-
-    33.33% {
-        background-image: url('Background 2.jpeg');
-    }
-
-    66.66% {
-        background-image: url('Background 2.jpeg');
-    }
-
-    83.33% {
-        background-image: url('Background 3.jpeg');
-    }
-
-    100% {
-        background-image: url('Background 3.jpeg');
-    }
+    0% { background-image: url('Background 1.jpeg'); }
+    16.66% { background-image: url('Background 1.jpeg'); }
+    33.33% { background-image: url('Background 2.jpeg'); }
+    66.66% { background-image: url('Background 2.jpeg'); }
+    83.33% { background-image: url('Background 3.jpeg'); }
+    100% { background-image: url('Background 3.jpeg'); }
 }
 
-
-/* ==================================== */
-/* CARD & GARIS (ARTIKEL) */
-/* ==================================== */
 .card {
     color: white !important;
     border: none;
     border-radius: 8px;
-    padding-top: 40px !important;
-    padding: 20px;
+    padding-top: 10px !important;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     background-color: transparent !important;
     z-index: 10;
+}
+
+/* PENGATURAN DEFAULT (DESKTOP) - RATA KIRI       */ */
+
+/* 1. Teks Welcome: RATA KIRI UNTUK DESKTOP */
+#hero-card .hero-welcome {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    
+    text-align: left !important;  /* DESKTOP: KIRI */
+    width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
 }
 
 .card-title {
@@ -152,37 +145,44 @@ article::before {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
     opacity: 1 !important;
 }
-/* ff9900 */
+
+/* 2. Garis Kuning: RATA KIRI UNTUK DESKTOP */
 .accent-divider {
     border: none;
     height: 0;
     border-top: 6px solid #ff9900;
-    width: 300px;
-    margin: 30px 0;
+    width: 100px; 
+    
+    margin: 5px 0 25px 0 !important; /* Margin Kiri 0 = Nempel Kiri */
+    
     border-radius: 8px;
 }
 
+/* ======================================================== */
 
-/* ==================================== */
-/* 5. COINTAINER IVENTORY & WORKSHOP*/
-/* ==================================== */
 .container-xxl {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #1a1a1a;
     position: relative;
+    overflow: hidden; 
 }
 
-.text-start.fs-3 {
+.container-xxl .fs-3 {
     font-weight: 700;
-    color: white !important;
+    color: #ffffff !important; 
     margin-bottom: 0.5rem;
-    margin-left: 10px;
+    margin-left: 10px; 
+    position: relative;
+    z-index: 5; 
 }
 
-.text-start.fs-5 {
-    color: #FFD700;
+.container-xxl .fs-5 {
+    color: #FFD700 !important; 
     margin-bottom: 1.5rem;
+    margin-left: 10px; 
+    position: relative;
+    z-index: 5;
 }
 
 .btn-outline-secondary {
@@ -198,7 +198,6 @@ article::before {
 .btn-outline-secondary:hover {
     border-color: #FFD700 !important;
     color: #000 !important;
-    /* Teks menjadi hitam saat hover */
     background-color: #FFD700 !important;
 }
 
@@ -212,7 +211,8 @@ article::before {
     position: absolute;
     display: block; 
     right: 60px;
-    top: 40px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
 }
 
@@ -226,48 +226,72 @@ article::before {
     position: absolute;
     display: block; 
     right: 60px;
-    top: 60px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
 }
 
+.desktop-icon {
+    font-size: 80px; 
+    background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    display: block; 
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
 
-/* ==================================== */
-/* 6. CAROUSEL */
-/* ==================================== */
 .container-fluid2 {
-    background : url(BG-Carousel.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background : url('BG-Carousel.jpeg') no-repeat center center/cover;
     display: flex;
     width: 100%;
-    min-height: 95vh;
-    max-width: none;
+    min-height: 70vh; 
     align-items: center;
     justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 50px 0;
 }
 
 .carousel {
-    box-shadow: 0 5px 30px 10px rgb(255, 153, 0);
-    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(255, 153, 0, 0.5); 
+    border-radius: 15px;
     overflow: hidden;
+    max-width: 900px; 
+    width: 100%;      
+    margin: 0 auto;   
 }
 
 .carousel-item img {
-    object-fit: cover;
+    height: 500px; 
+    object-fit: cover; 
+    width: 100%;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
-    border-radius: 5px;
-    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    padding: 30px !important;
+    border-radius: 15px !important; 
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: initial !important; 
+    width: 85% !important;      
+    height: auto !important;   
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .carousel-caption h5 {
     font-weight: 700;
     color: #FFD700;
+    margin-bottom: 10px;
 }
 
 .carousel-caption p {
@@ -285,10 +309,6 @@ article::before {
     opacity: 1;
 }
 
-
-/* ==================================== */
-/* 7. Information */
-/* ==================================== */
 .full-width-contact {
     background-color: #000000 !important;
     padding: 50px 0;
@@ -319,7 +339,6 @@ article::before {
     margin-bottom: 5px;
     color: #1a1a1a !important;
     font-weight: 400;
-
 }
 
 .row.gy-5>.col-6 {
@@ -353,7 +372,6 @@ article::before {
     background: linear-gradient(135deg, #FFD700 40%, #ff9900 60% );
     border-radius: 8px;
     z-index: 0;
-
 }
 
 .full-width-contact .container.overflow-hidden .row {
@@ -375,10 +393,6 @@ article::before {
     padding-left: 25px;
 }
 
-
-/* ==================================== */
-/* 8. FOOTER */
-/* ==================================== */
 footer {
     background-color: #1a1a1a;
     color: #FFD700;
@@ -388,120 +402,158 @@ footer {
     text-align: center;
 }
 
-
-/* ==================================== */
-/* 9. RESPONSIVE (MEDIA QUERIES) */
-/* ==================================== */
-/* === Tablet dan Desktop Kecil === */
 @media (max-width: 992px) {
+    article { min-height: 80vh; }
+    .full-width-contact .container, .container-xxl .container { max-width: 960px; }
+    .carousel { width: 95%; max-width: 900px; margin: 0 auto; }
+    .carousel-item img { height: 45vh; object-fit: cover; }
+}
+
+@media (max-width: 576px) {
+    .carousel { width: 100%; }
+    .carousel-item img { height: 35vh; object-fit: cover; }
+    .card-title { font-size: 1.5rem; }
+}
+
+
+/* ======================================================== */
+/* [BAGIAN 2] ZONA RESPONSIF (TABLET & HP)                 */
+/* ======================================================== */
+
+.navbar-toggler {
+    border: none !important;            
+    outline: none !important;           
+    box-shadow: none !important;        
+    background: transparent !important; 
+    padding: 0 !important;              
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* TABLET & HP (< 992px) */
+/* Di sini kita ubah jadi RATA TENGAH */
+@media (max-width: 992px) {
+    
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .navbar-brand img { width: 120px !important; height: auto !important; }
+    
+    .navbar-collapse {
+        background-color: #000000 !important;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #FFD700;
+        z-index: 1000;
+    }
+    .navbar-nav { width: 100%; padding-left: 0; list-style: none; text-align: center; }
+    .nav-item { margin-bottom: 10px; border-bottom: 1px solid rgba(255, 215, 0, 0.2); }
+    .nav-link { color: #ffffff !important; display: block; }
+    .nav-link:hover, .nav-link.active { color: #FFD700 !important; }
+
+    /* --- HERO CARD FIX --- */
     article {
-        min-height: 70vh;
+        display: flex !important;
+        justify-content: center !important; 
+        align-items: center !important;     
+        padding: 80px 20px !important;      
     }
 
-    .full-width-contact .container,
-    .container-xxl .container {
-        max-width: 960px;
+    #hero-card {
+        margin: 0 !important;       
+        width: 100% !important;     
+        max-width: 500px !important;
+        position: static !important;
+        transform: none !important;
+        float: none !important;
     }
 
-    .carousel {
-        width: 95%;
+    .card-body {
+        text-align: center !important;       
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;      
+        padding: 0 !important;
     }
-    .carousel-item img {
-        height: 45vh; 
+
+    /* [KHUSUS TABLET/HP: PAKSA WELCOME JADI TENGAH] */
+    #hero-card .hero-welcome {
+        text-align: center !important; /* Timpa left jadi center */
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* [KHUSUS TABLET/HP: GARIS KUNING JADI TENGAH] */
+    .accent-divider {
+        margin: 15px auto !important; /* Auto = Tengah */
+        width: 100px !important;
     }
 
     .card-title {
-        font-size: 1.8rem; 
+        font-size: 1.8rem !important;
+        text-align: center !important;
     }
     
-    .text-start.fs-3 { 
-        font-size: 1.8rem !important;
+    .card-text {
+        text-align: center !important;
+    }
+
+    .desktop-icon, .bi-car-front, .bi-tools { display: none !important; }
+    
+    .section-wrapper {
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 40px 20px !important;
+    }
+    .container-xxl .fs-3, .container-xxl .fs-5 {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .carousel-caption {
+        width: 90% !important;
+        padding: 25px !important;
+        min-height: 220px !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
 
-/* === Handphone dan Tablet Portrait === */
+/* HP (< 768px) */
 @media (max-width: 768px) {
-    article {
-        min-height: auto; 
-        padding: 40px 0; 
-    }
-
-    .container-xxl,
-    .full-width-contact .container {
-        padding-left: 15px !important; 
-        padding-right: 15px !important;
-    }
-
-    /* Navigasi */
-    .navbar-collapse {
-        background-color: #0d0d0d;
-        padding: 10px 15px; 
-    }
-    .nav-link {
-        margin: 5px 0;
-        text-align: left; 
-        width: 100%; 
-    }
-
-    .card-wrapper {
-        padding: 0; 
-    }
-    .card {
-        width: 100% !important;
-        margin: 0 0 25px 0 !important; 
-        padding: 15px;
-    }
-
-    .card-title {
-        font-size: 1.3rem; 
-    }
-    .card-text {
-        font-size: 0.85rem; 
-    }
-    .text-start.fs-3 {
-        font-size: 1.3rem !important; 
-    }
-    .text-start.fs-5 {
-        font-size: 0.95rem; 
-    }
-
-    .accent-divider {
-        width: 150px; 
-        margin: 15px auto;
-    }
-
-    .row.gy-5 > div {
+    .carousel-item img { height: 250px !important; }
+    .container-fluid2 { min-height: 50vh; padding: 30px 0; }
+    
+    .row.gy-5 > .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
         border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2);
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
-
-    .row.gy-5 > div:last-child {
-         border-bottom: none;
-         margin-bottom: 0;
+    .row.gy-5 > .col-6:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
     }
 
-    footer {
-        margin-top: 30px;
-        padding: 20px 15px; 
+    .carousel-caption {
+        width: 95% !important; 
+        padding: 20px !important;
+        min-height: auto !important; 
     }
-}
-
-/* === Handphone Sangat Kecil === */
-@media (max-width: 576px) {
-    .carousel {
-        width: 100%; 
+    .carousel-caption h5 {
+        font-size: 1.2rem !important; 
+        margin-bottom: 8px !important;
     }
-    .carousel-item img {
-        height: 35vh; 
-        object-fit: cover; 
-    }
-
-    .card-title {
-        font-size: 1.2rem;
-    }
-    .text-start.fs-3 {
-        font-size: 1.2rem !important;
+    .carousel-caption p {
+        font-size: 0.95rem !important;
     }
 }
