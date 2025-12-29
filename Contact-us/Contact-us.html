@@ -6,39 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Scaramouchtor</title>
     <link rel="stylesheet" href="Contact-us-style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container-fluid **px-0**">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-3 px-lg-5">
             <a class="navbar-brand" href="../Homepage/Home.html">
-                <img src="Logocopy4.png" alt="Logo" width="160" height="60">
+                <img src="../Homepage/Logo.png" alt="Logo" width="160" height="60" 
+                     onerror="this.src='Logocopy2.png';">
             </a>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="../About-us/about-us.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Iventory/Iventory.html">Iventory</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Workshop/Workshop.html">Workshops</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Event-folder/Events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Contact-us.html">Contact us</a>
-                </li>
-            </ul>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavWorkshop"
+                aria-controls="navbarNavWorkshop" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFD700" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavWorkshop">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About-us/about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Iventory/Iventory.html">Inventory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Workshop/Workshop.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Event-folder/Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Contact-us/Contact-us.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <article>
-        <p class="text-center fs-3 fw-bold">For more informations, You can access our Social Media:</p>
-        <div class="accent-divider"></div>
+        <p class="text-center mt-5 fs-3 fw-bold">For more informations, You can access our Social Media:</p>
+        <hr style="border: none; border-top: 5px solid orange; margin-left: auto; margin-right: auto;">
         <div class="container py-5">
             <div class="row text-center">
                 <div class="col-6 col-md-3 mb-4">
@@ -75,9 +88,10 @@
             </div>
         </div>
     </article>
+
     <div class="container-fluid py-5 bg-dark-custom">
         <p class="text-center mt-5 fs-3 fw-bold">Please Contact us for asking our services: </p>
-        <div class="accent-divider2"></div>>
+        <hr style="border: none; border-top: 5px solid orange; margin-left: auto; margin-right: auto;">
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="contact-info-card">
@@ -102,7 +116,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4 mb-4">
                 <div class="contact-info-card">
                     <div class="icon-circle bg-orange">
@@ -119,8 +132,9 @@
     </div>
 
     <div class="container-fluid FAQ-section">
-        <h2 class="fw-bold text-center">Frequently Asked Questions</h2>
-        <div class="accent-divider3"></div>>
+    <div class="container"> <h2 class="fw-bold text-center">Frequently Asked Questions</h2>
+        <hr style="border: none; border-top: 5px solid orange; width: 150px; margin:auto;">
+        
         <div class="accordion mt-4" id="faqAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -134,7 +148,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
@@ -149,24 +162,15 @@
             </div>
         </div>
     </div>
+    </div>
+
     <div class="container-fluid map-section">
-        <div class="container">
-            <h2 class="text-center fw-bold title">SCARAMOUCHTOR ONE</h2>
-            <div class="mt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31729.741665411413!2d106.80390833652343!3d-6.235008003897502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f15b30d89e2f%3A0x36d3e4c4cc53ad68!2sJl.%20Senopati%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sen!2sid!4v1766111848782!5m2!1sen!2sid" 
-                width="100%" height="400" style="border:0;"
+        <h2 class="text-center fw-bold">Find Us on Maps</h2>
+        <hr style="border: none; border-top: 5px solid orange; width: 150px; margin:auto;">
+        <div class="mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="400" style="border:0;"
                 allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <h2 class="text-center fw-bold title">SCARAMOUCHTOR CULTURE</h2>
-            <div class="mt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8166.656690241271!2d106.75759552569772!3d-6.1194030676050115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d0b571c5ba3%3A0xe0893d4988d78581!2sJl.%20Pantai%20Indah%20Utara%202%2C%20Kapuk%20Muara%2C%20Kecamatan%20Penjaringan%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014460!5e0!3m2!1sen!2sid!4v1766133930949!5m2!1sen!2sid"
-                width="100%" height="400" style="border:0;"
-                allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
+            </iframe>
         </div>
     </div>
 
@@ -176,8 +180,8 @@
                 <div class="row gy-5">
                     <div class="col-6">
                         <div class="p-3 fs-5">SCARAMOUCHTOR ONE</div>
-                        <p>Jalan Senopati No. 25, Kebayoran Baru,</p>
-                        <p>Jakarta Selatan, Indonesia</p>
+                        <p>Jalan Senopati Indah Kita No. 25</p>
+                        <p>Kebayoran Baru Banget, Jakarta Selatan, Indonesia</p>
                     </div>
                     <div class="col-6">
                         <div class="p-3 fs-5">SCARAMOUCHTOR CULTURE</div>
@@ -201,6 +205,7 @@
                     </div>
                     <div class="col-6">
                         <div class="p-3 fs-5"> CONTACT US</div>
+                        <p>Telp : (+62 21) 72274247</p>
                         <p>Hotline : +62 823 007 987</p>
                     </div>
                     <div class="col-6">
