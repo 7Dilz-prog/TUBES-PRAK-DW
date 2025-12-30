@@ -25,7 +25,7 @@ body {
     right: 0;
     width: 100%;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 15px 0 !important;
     background-color: transparent !important; 
     transition: all 0.4s ease-in-out;
     box-shadow: none !important;
@@ -69,17 +69,78 @@ body {
     content: none;
 }
 
+/* navbar dropdown */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important; }
+
 .navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
-}
+    box-shadow: none !important; }
+
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important; }
+
+    .navbar-brand img {
+        width: 120px !important; 
+        height: auto !important; }
+
+    .navbar-collapse {
+        background-color: #000000 !important; /* Hitam Solid */
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #FFD700;
+        z-index: 1000; }
+
+    .navbar-nav {
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        text-align: center; }
+
+    .nav-item {
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2); }
+    
+    .nav-link {
+        color: #ffffff !important;
+        display: block; }
+    
+    .nav-link:hover {
+        color: #FFD700 !important; }
+    
+    .nav-link.active {
+        color: #ffffff !important; }
+
+    .accent-divider2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 150px !important; }
+
+    article .card {
+        width: auto !important;       
+        margin: 20px 15px !important;  }
+    
+    .card-title {
+        font-size: 35px !important; }
+
+    .col img {
+        height: 200px !important; } }
+
 
 article {
     background: no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 20px 0 50px 0;
+    padding: 50px 0;
     transition: background-image 5s ease-in-out;
     animation: gantiBackground 20s infinite;
     position: relative;
@@ -93,7 +154,7 @@ article::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.514);
     z-index: 2;
 }
 
@@ -111,21 +172,19 @@ article::before {
     border: none;
     border-radius: 8px;
     padding-top: 10px !important;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 30px;
     background-color: transparent !important;
     z-index: 10;
 }
 
-/* PENGATURAN DEFAULT (DESKTOP) - RATA KIRI       */ */
+/* PENGATURAN DEFAULT (DESKTOP) - RATA KIRI       */
 
 /* 1. Teks Welcome: RATA KIRI UNTUK DESKTOP */
 #hero-card .hero-welcome {
     color: #ffffff !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     
-    text-align: left !important;  /* DESKTOP: KIRI */
+    text-align: center !important;  /* DESKTOP: KIRI */
     width: 100% !important;
     display: block !important;
     margin: 0 !important;
@@ -137,6 +196,7 @@ article::before {
     font-size: 2.2rem;
     opacity: 1 !important;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
+    text-align: center;
 }
 
 .card-text {
@@ -144,17 +204,16 @@ article::before {
     line-height: 1.6;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.6);
     opacity: 1 !important;
+    text-align: center;
 }
 
-/* 2. Garis Kuning: RATA KIRI UNTUK DESKTOP */
 .accent-divider {
     border: none;
     height: 0;
     border-top: 6px solid #ff9900;
-    width: 100px; 
-    
-    margin: 5px 0 25px 0 !important; /* Margin Kiri 0 = Nempel Kiri */
-    
+    width: 200px; 
+    margin: 20px 0;
+    margin-left: 485px;
     border-radius: 8px;
 }
 
@@ -165,24 +224,19 @@ article::before {
     padding-bottom: 30px;
     background-color: #1a1a1a;
     position: relative;
-    overflow: hidden; 
+    padding-left: 0px !important;
 }
 
 .container-xxl .fs-3 {
     font-weight: 700;
     color: #ffffff !important; 
     margin-bottom: 0.5rem;
-    margin-left: 10px; 
-    position: relative;
-    z-index: 5; 
+    margin-left: 0 !important; 
 }
 
 .container-xxl .fs-5 {
     color: #FFD700 !important; 
     margin-bottom: 1.5rem;
-    margin-left: 10px; 
-    position: relative;
-    z-index: 5;
 }
 
 .btn-outline-secondary {

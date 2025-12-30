@@ -14,23 +14,27 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-3 px-lg-5">
-            <a class="navbar-brand" href="Home.html">
-                <img src="Logo.png" alt="Logo" width="140" height="auto">
+            <a class="navbar-brand" href="../Homepage/Home.html">
+                <img src="../Homepage/Logo.png" alt="Logo" width="160" height="60" 
+                     onerror="this.src='Logo.png';">
             </a>
 
-            <button class="navbar-toggler border-0 focus-ring focus-ring-warning" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="bi bi-three-dots-vertical fs-1" style="color: #FFD700;"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavWorkshop"
+                aria-controls="navbarNavWorkshop" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFD700" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavWorkshop">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item">
                         <a class="nav-link" href="../About-us/about-us.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Iventory/Iventory.html">Inventory</a>
+                        <a class="nav-link active" href="../Iventory/Iventory.html">Inventory</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Workshop/Workshop.html">Workshops</a>
