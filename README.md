@@ -20,7 +20,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. HTML -> Delsyad, Herlyana
 2. CSS -> Farash, Abdurrahman
 3. JS, Responsiveness -> Alifian, Inna
-4. JSON -> Inna
+4. JSON for pop up-> Inna
 5. Wireframe -> Delsyad, Alifian, Farash
 6. Laporan ReadME -> Inna, Herlyana, Abdurrahman
 
