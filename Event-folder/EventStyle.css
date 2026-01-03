@@ -1,3 +1,4 @@
+/* FInal */
 * {
     box-sizing: border-box;
 }
@@ -96,25 +97,20 @@ article::before {
     padding: 20px;
     background-color: transparent !important;
     z-index: 10;
-}
-
-article h5{
-    white-space: nowrap; /* Mencegah teks turun ke bawah */
-    display: inline-block;
-    color: #ffffff !important;
+    
 }
 
 .card-title.fs-2 {
-        text-align: left !important;
+        text-align: center !important;
         display: block !important;
-        width: 90% !important;
+        width: 100% !important;
         writing-mode: horizontal-tb !important; /* Memastikan teks tidak vertikal */
-        font-weight: 700;
-        font-size: 50px;
-        color: #ffffff !important;
+        letter-spacing: 5px;
     }
 
-
+.card-text.fs-6{
+    color: #ff9900;
+}
 
 .accent-divider {
     border: none;
@@ -285,7 +281,7 @@ footer {
     gap: 6px;
     cursor: pointer;
     z-index: 2001;
-    margin-right : 20px;
+    margin-right: -50px !important;
 }
 
 .kebab-menu span {
@@ -298,21 +294,22 @@ footer {
 /* FULLSCREEN MENU */
 .mobile-menu {
     position: fixed;
-    top: 620px; 
+    top: 38%; 
     left: 50%;
-    transform: translate(-50%, -150%); 
+    transform: translate(-50%, -50%); 
     perspective: 1000px;
-    width: 86%;
-    max-width: 280px;
-    height: 69%;
+    width: 94%;
+    min-width: 240px;
+    max-width: 94%;
+    height: auto;
     background: #000000;
     z-index: 2000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0; 
-    border-radius: 7px;
+    padding: 10px 0; 
+    border-radius: 10px;
     border: 1px solid #FFD700;
     
     clip-path: inset(0 0 100% 0); 
@@ -326,7 +323,7 @@ footer {
 .mobile-menu a {
     width: 90%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: white;
     text-decoration: none;

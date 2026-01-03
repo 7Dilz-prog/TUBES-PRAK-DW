@@ -82,15 +82,17 @@ body {
 
 @media (max-width: 992px) {
     .navbar .container-fluid {
-        display: flex;
+        display: flex !important;
         justify-content: space-between !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important; }
+        align-items: center !important;
+        padding-left: 16px !important;
+        padding-right: 20px !important; 
+    }
 
     .navbar-brand img {
         width: 160px !important; 
-        height: 60px !important; }
-
+        height: 60px !important; 
+    }
     .navbar-collapse {
         background-color: #000000 !important; /* Hitam Solid */
         padding: 20px;
@@ -98,7 +100,6 @@ body {
         margin-top: 15px;
         border: 1px solid #FFD700;
         z-index: 1000; }
-
     .navbar-nav {
         width: 100%;
         padding-left: 0;
