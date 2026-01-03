@@ -77,10 +77,17 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    Tampilan fitur Pop-Up
    </p>
    <br><br>
+   
+   <img width="1897" height="937" alt="image" src="https://github.com/user-attachments/assets/3ae5bade-bec0-4aac-a148-ae2ade28295e" />
+   <p align= "center">
+   Tampilan fitur kontak menuju WhatsApp
+   </p>
+   <br><br>
 
-4. Workshops
-5. Events
-6. Contact Us
+
+5. Workshops
+6. Events
+7. Contact Us
 
 ## Pembagian tugas - na
 1. HTML -> Delsyad, Herlyana
