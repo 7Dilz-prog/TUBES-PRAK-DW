@@ -18,7 +18,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
    <img width="1902" height="842" alt="image" src="https://github.com/user-attachments/assets/41907ea7-94b9-4cb1-9176-10fe1f1115c1" />
    <p align= "justify">
-   Halaman Homepage pada website Scaramouchtor berfungsi sebagai halaman utama yang memberikan gambaran awal mengenai website sekaligus menyediakan fitur interaktif dasar bagi pengguna. Fitur utama yang tersedia pada halaman ini adalah navigasi menu (navbar) yang memungkinkan pengguna           berpindah ke halaman lain seperti About Us, Inventory, Workshops,       Events, dan Contact Us. Selain itu, terdapat carousel kendaraan yang dapat dioperasikan oleh pengguna untuk melihat beberapa mobil unggulan melalui tombol navigasi next dan previous. Homepage juga menyediakan tombol View       pada bagian Inventory dan Workshops yang berfungsi sebagai akses cepat bagi pengguna untuk menuju halaman terkait. Selain fitur           tersebut, konten lain pada halaman Homepage bersifat informatif dan berfungsi untuk memperkenalkan identitas serta layanan Scaramouchtor tanpa interaksi langsung    dari pengguna.
+   Halaman Homepage pada website Scaramouchtor berfungsi sebagai halaman utama yang memberikan gambaran awal mengenai website sekaligus menyediakan fitur interaktif dasar bagi pengguna. Fitur utama yang tersedia pada halaman ini adalah navigasi menu (navbar) yang memungkinkan pengguna berpindah ke halaman lain seperti About Us, Inventory, Workshops, Events, dan Contact Us. Selain itu, terdapat carousel kendaraan yang dapat dioperasikan oleh pengguna untuk melihat beberapa mobil unggulan melalui tombol navigasi next dan previous. Homepage juga menyediakan tombol View pada bagian Inventory dan Workshops yang berfungsi sebagai akses cepat bagi pengguna untuk menuju halaman terkait. Selain fitur tersebut, konten lain pada halaman Homepage bersifat informatif dan berfungsi untuk memperkenalkan identitas serta layanan Scaramouchtor tanpa interaksi langsung dari pengguna.
    </p>
    <br><br>
    
@@ -27,6 +27,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    Tampilan fitur Carousel Kendaraan
    </p>
    <br><br>
+
    <img width="1900" height="932" alt="image" src="https://github.com/user-attachments/assets/f3f85740-45bf-47fa-8362-fd95c21307de" />
    <p align= "center">
    Tampilan fitur tombol View untuk menuju halaman Inventory
@@ -39,7 +40,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    </p>
    <br><br>
    
-3. About Us
+2. About Us
    <img width="1903" height="935" alt="image" src="https://github.com/user-attachments/assets/5216ab60-3294-4e2f-bb50-08cffcb5621a" />
    
    <img width="1908" height="840" alt="image" src="https://github.com/user-attachments/assets/79822a49-1167-40ca-ad1b-98eeb6d2e718" />
@@ -54,10 +55,11 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    
    <img width="1903" height="836" alt="image" src="https://github.com/user-attachments/assets/673761ff-8593-4f99-b470-e1af39954fa6" />
    <p align= "justify">
-   Halaman About Us pada website Scaramouchtor berfungsi sebagai media informasi untuk memperkenalkan profil perusahaan, identitas brand, serta layanan yang disediakan kepada pengguna. Pada bagian awal halaman, terdapat navbar sebagai navigasi utama yang memudahkan pengguna mengakses halaman lain seperti Inventory, Workshops, Events, dan Contact Us.                 Selanjutnya, bagian header “ABOUT US” digunakan sebagai pengantar yang menegaskan bahwa halaman ini berisi informasi mengenai Scaramouchtor sebagai showroom kendaraan premium yang juga menyediakan layanan workshop dan towing.         Halaman ini menampilkan dua bagian utama berupa section gambar dan teks yang menjelaskan latar belakang perusahaan, konsep         layanan, serta penekanan pada pengalaman after-sales. Selain itu, terdapat fitur Milestone (timeline) yang menyajikan perkembangan Scaramouchtor dari tahun 2022          hingga 2025 untuk menunjukkan pencapaian dan pertumbuhan perusahaan. Halaman ini juga dilengkapi Meet Our Team untuk menampilkan struktur tim inti beserta jabatannya sebagai bentuk               transparansi dan peningkatan kredibilitas. Pada bagian berikutnya tersedia testimoni pelanggan yang bertujuan memberikan bukti kepuasan dan meningkatkan kepercayaan pengguna terhadap layanan Scaramouchtor. Terakhir, halaman menambahkan embed video YouTube sebagai media pendukung informasi visual dan memperkuat penyampaian branding. Secara keseluruhan, halaman    About Us dirancang untuk       meningkatkan pemahaman pengguna mengenai perusahaan, membangun kepercayaan, serta memperkuat citra profesional Scaramouchtor.
+   Halaman About Us pada website Scaramouchtor berfungsi sebagai media informasi untuk memperkenalkan profil perusahaan, identitas brand, serta layanan yang disediakan kepada pengguna. Pada bagian awal halaman, terdapat navbar sebagai navigasi utama yang memudahkan pengguna mengakses halaman lain seperti Inventory, Workshops, Events, dan Contact Us.        Selanjutnya, bagian header “ABOUT US” digunakan sebagai pengantar yang menegaskan bahwa halaman ini berisi informasi mengenai Scaramouchtor sebagai showroom kendaraan premium yang juga menyediakan layanan workshop dan towing. Halaman ini menampilkan dua bagian utama berupa section gambar dan teks yang menjelaskan latar belakang perusahaan, konsep layanan, serta penekanan pada pengalaman after-sales. Selain itu, terdapat fitur Milestone (timeline) yang menyajikan perkembangan Scaramouchtor dari tahun 2022 hingga 2025 untuk menunjukkan pencapaian dan pertumbuhan perusahaan. Halaman ini juga dilengkapi Meet Our Team untuk menampilkan struktur tim inti beserta jabatannya sebagai bentuk transparansi dan peningkatan kredibilitas. Pada bagian berikutnya tersedia testimoni pelanggan yang bertujuan memberikan bukti kepuasan dan meningkatkan kepercayaan pengguna terhadap layanan Scaramouchtor. Terakhir, halaman menambahkan embed video YouTube sebagai media pendukung informasi visual dan memperkuat penyampaian branding. Secara keseluruhan, halaman About Us dirancang untuk meningkatkan pemahaman pengguna mengenai perusahaan, membangun kepercayaan, serta memperkuat citra profesional Scaramouchtor.
    </p>
-   
-4. Inventory
+   <br><br>
+
+3. Inventory
    <img width="1906" height="933" alt="image" src="https://github.com/user-attachments/assets/c4ddb972-531e-4651-803b-65bc9db6618b" />
    <img width="1900" height="731" alt="image" src="https://github.com/user-attachments/assets/2977da09-563c-475a-a58e-ff5092dd7f55" />
    <img width="1898" height="830" alt="image" src="https://github.com/user-attachments/assets/05fb2573-b7cb-48a0-865b-5869600a2c48" />
@@ -66,17 +68,19 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    <img width="1903" height="845" alt="image" src="https://github.com/user-attachments/assets/35ccd568-f3ca-40b5-ab12-dfd73295d453" />
 
    <p align= "justify">
-   Halaman Inventory pada website Scaramouchtor berfungsi sebagai halaman katalog untuk menampilkan koleksi kendaraan yang tersedia sehingga pengguna dapat melihat pilihan mobil sebelum melakukan pembelian atau inquiry. Pada bagian awal halaman terdapat navbar sebagai navigasi utama untuk       berpindah ke menu lain seperti About Us, Workshops, Events, dan Contact Us. Selanjutnya, bagian header “IVENTORY” berisi deskripsi singkat yang menjelaskan tujuan halaman, yaitu membantu pengguna menemukan mobil favorit dari koleksi Scaramouchtor, sekaligus memberikan informasi bahwa         showroom menyediakan berbagai merek kendaraan premium. Konten utama halaman dibagi menjadi dua kategori lokasi/showroom, yaitu Scaramouchtor One dan Scaramouchtor Culture, yang masing-masing menampilkan grid gambar mobil dalam format 3 kolom (galeri). Setiap gambar mobil diberi atribut       data-id sebagai penanda untuk menampilkan informasi detail kendaraan. Halaman ini juga menyediakan fitur call center/WhatsApp button pada tiap kategori showroom untuk memudahkan pengguna menghubungi pihak Scaramouchtor secara langsung terkait informasi dan proses pembelian. Selain itu,       terdapat fitur pop-up (Bootstrap Modal) yang berfungsi menampilkan detail mobil ketika pengguna memilih salah satu gambar, meliputi gambar kendaraan, nama mobil, tahun, dan deskripsi yang ditampilkan pada area detail di sisi kanan modal. Pada bagian bawah halaman, disediakan informasi        tambahan berupa alamat showroom dan jam operasional untuk mendukung kebutuhan pengguna yang ingin berkunjung secara langsung. Secara keseluruhan, halaman Inventory dirancang sebagai media informasi dan interaksi yang menggabungkan tampilan koleksi kendaraan, detail kendaraan melalui          modal, serta akses komunikasi cepat melalui WhatsApp.
+   Halaman Inventory pada website Scaramouchtor berfungsi sebagai halaman katalog untuk menampilkan koleksi kendaraan yang tersedia sehingga pengguna dapat melihat pilihan mobil sebelum melakukan pembelian atau inquiry. Pada bagian awal halaman terdapat navbar sebagai navigasi utama untuk berpindah ke menu lain seperti About Us, Workshops, Events, dan Contact Us. Selanjutnya, bagian header “IVENTORY” berisi deskripsi singkat yang menjelaskan tujuan halaman, yaitu membantu pengguna menemukan mobil favorit dari koleksi Scaramouchtor, sekaligus memberikan informasi bahwa showroom menyediakan berbagai merek kendaraan premium. Konten utama halaman dibagi menjadi dua kategori lokasi/showroom, yaitu Scaramouchtor One dan Scaramouchtor Culture, yang masing-masing menampilkan grid gambar mobil dalam format 3 kolom (galeri). Setiap gambar mobil diberi atribut data-id sebagai penanda untuk menampilkan informasi detail kendaraan. Halaman ini juga menyediakan fitur call center/WhatsApp button pada tiap kategori showroom untuk memudahkan pengguna menghubungi pihak Scaramouchtor secara langsung terkait informasi dan proses pembelian. Selain itu, terdapat fitur pop-up (Bootstrap Modal) yang berfungsi menampilkan detail mobil ketika pengguna memilih salah satu gambar, meliputi gambar kendaraan, nama mobil, tahun, dan deskripsi yang ditampilkan pada area detail di sisi kanan modal. Pada bagian bawah halaman, disediakan informasi tambahan berupa alamat showroom dan jam operasional untuk mendukung kebutuhan pengguna yang ingin berkunjung secara langsung. Secara keseluruhan, halaman Inventory dirancang sebagai media informasi dan interaksi yang menggabungkan tampilan koleksi kendaraan, detail kendaraan melalui modal, serta akses komunikasi cepat melalui WhatsApp.
    </p>
+   <br><br>
 
    <img width="1895" height="819" alt="image" src="https://github.com/user-attachments/assets/16c5a41c-e1d9-4970-851b-920499d6436d" />
    <p align= "center">
    Tampilan fitur Pop-Up
    </p>
+   <br><br>
 
-5. Workshops
-6. Events
-7. Contact Us
+4. Workshops
+5. Events
+6. Contact Us
 
 ## Pembagian tugas - na
 1. HTML -> Delsyad, Herlyana
