@@ -96,25 +96,20 @@ article::before {
     padding: 20px;
     background-color: transparent !important;
     z-index: 10;
-}
-
-article h5{
-    white-space: nowrap; /* Mencegah teks turun ke bawah */
-    display: inline-block;
-    color: #ffffff !important;
+    
 }
 
 .card-title.fs-2 {
-        text-align: left !important;
+        text-align: center !important;
         display: block !important;
-        width: 90% !important;
+        width: 100% !important;
         writing-mode: horizontal-tb !important; /* Memastikan teks tidak vertikal */
-        font-weight: 700;
-        font-size: 50px;
-        color: #ffffff !important;
+        letter-spacing: 5px;
     }
 
-
+.card-text.fs-6{
+    color: #ff9900;
+}
 
 .accent-divider {
     border: none;
