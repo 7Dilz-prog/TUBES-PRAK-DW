@@ -88,8 +88,8 @@ body {
         padding-right: 20px !important; }
 
     .navbar-brand img {
-        width: 120px !important; 
-        height: auto !important; }
+        width: 160px !important; 
+        height: 60px !important; }
 
     .navbar-collapse {
         background-color: #000000 !important; /* Hitam Solid */
@@ -495,7 +495,7 @@ footer {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    .navbar-brand img { width: 120px !important; height: auto !important; }
+    .navbar-brand img { width: 160px !important; height: 60px !important; }
     
     .navbar-collapse {
         background-color: #000000 !important;
