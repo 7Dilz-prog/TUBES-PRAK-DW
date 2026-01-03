@@ -1,16 +1,11 @@
-/**
- * EventScript.js - Scaramouchtor
- * Berisi logika untuk Navbar, Mobile Menu, dan Perbaikan Bug Visual
- */
-
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
-    const kebabMenu = document.getElementById('kebabMenu');
+    const kebabBtn = document.getElementById('kebabBtn'); // Pastikan ID ini sama dengan HTML
     const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
     const body = document.body;
 
     // 1. EFEK SCROLL NAVBAR
-    // Mengubah background navbar dari transparan ke hitam saat di-scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('nav-scrolled');
@@ -19,38 +14,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. LOGIKA BUKA/TUTUP MOBILE MENU
-    if (kebabMenu && mobileMenu) {
-        kebabMenu.addEventListener('click', () => {
+    // 2. LOGIKA BUKA/TUTUP MOBILE MENU (Trigger Klik)
+    if (kebabBtn && mobileMenu) {
+        kebabBtn.addEventListener('click', () => {
             const isOpening = mobileMenu.classList.toggle('show');
+            if (menuOverlay) menuOverlay.classList.toggle('active');
 
-            // FIX GETAR: Kunci scroll body agar tidak terjadi konflik gerakan
+            // FIX SCROLL: Kunci layar saat menu buka
             if (isOpening) {
-                // Saat menu terbuka, layar belakang tidak bisa di-scroll
                 body.style.overflow = 'hidden';
-                body.style.touchAction = 'none'; // Tambahan untuk kestabilan di HP
+                body.style.touchAction = 'none';
             } else {
-                // Saat menu tertutup, kembalikan fungsi scroll
                 body.style.overflow = 'auto';
                 body.style.touchAction = 'auto';
             }
         });
     }
 
-    // 3. AUTO-CLOSE MENU SAAT KLIK LINK
-    // Berguna agar menu otomatis tertutup saat user memilih menu (Events, Inventory, dll)
+    // 3. AUTO-CLOSE SAAT KLIK LINK ATAU OVERLAY
+    const closeMenu = () => {
+        mobileMenu.classList.remove('show');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+        body.style.overflow = 'auto';
+        body.style.touchAction = 'auto';
+    };
+
+    if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
     const mobileLinks = document.querySelectorAll('.mobile-menu a');
     mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('show');
-            body.style.overflow = 'auto';
-            body.style.touchAction = 'auto';
-        });
+        link.addEventListener('click', closeMenu);
     });
+
+    // 4. RESET SAAT LAYAR DIBESARKAN
     window.addEventListener('resize', () => {
         if (window.innerWidth > 992) {
-            mobileMenu.classList.remove('show');
-            body.style.overflow = 'auto';
+            closeMenu();
         }
     });
 });
