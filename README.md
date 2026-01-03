@@ -14,7 +14,7 @@ Dengan anggota tim :
 5. Herlyana Ferdiani (4524210042)
 6. Inna Lutfiah Fatih (4524210044)
 
-## Halaman Utama Website Scaramouchtor (dijelasin ada apa aja di dalam page tersebut)
+## Halaman Utama Website Scaramouchtor
 Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Landing Page
 2. About Us
@@ -41,6 +41,3 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 6. Masuk ke branch masing-masing
 7. git merge origin Delsyad
 8. Lakukan poin 2 sampai 4
-
-# Dokumentasi
-1. 29/11/2025 : Our first meeting on google meet!
