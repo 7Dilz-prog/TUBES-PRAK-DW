@@ -59,6 +59,13 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    </p>
    <br><br>
 
+   <img width="1905" height="940" alt="image" src="https://github.com/user-attachments/assets/d551fda6-69e8-4f44-aa9c-0b838f1a8616" />
+   <p align= "center">
+   Tampilan Fitur Pemutaran Video
+   </p>
+   <br><br>
+
+
 3. Inventory
    <img width="1906" height="933" alt="image" src="https://github.com/user-attachments/assets/c4ddb972-531e-4651-803b-65bc9db6618b" />
    <img width="1900" height="731" alt="image" src="https://github.com/user-attachments/assets/2977da09-563c-475a-a58e-ff5092dd7f55" />
