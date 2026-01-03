@@ -57,13 +57,26 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 ## Bukti Aksesibilitas Audit Lighthouse - na
 1. Homepage
    ![WhatsApp Image 2026-01-03 at 11 12 01](https://github.com/user-attachments/assets/ed41c150-4cce-428c-af45-0ce1b8dcd446)
-
 2. About Us
-   ![WhatsApp Image 2026-01-03 at 11 11 42](https://github.com/user-attachments/assets/735e2de6-8e51-479c-8d33-9b92d8b49d19)
-3. Inventory 
+   
+   <img width="731" height="281" alt="image" src="https://github.com/user-attachments/assets/7f87c2c4-0890-40a4-9d04-7e1e3a028884" />
+
+3. Inventory
+   
+   <img width="838" height="272" alt="image" src="https://github.com/user-attachments/assets/8524ed9e-1b20-4fd2-a5da-fa0595643e78" />
+
 4. Workshops
+   
+   <img width="832" height="283" alt="image" src="https://github.com/user-attachments/assets/aee9413b-2af2-4bef-9cba-f2c9bbff0615" />
+
 5. Events
+   
+   <img width="729" height="290" alt="image" src="https://github.com/user-attachments/assets/ea3e8d25-9e15-4f80-8f42-9aac321578dc" />
+
 6. Contact Us
+    
+   <img width="734" height="288" alt="image" src="https://github.com/user-attachments/assets/c904d3db-0a83-4817-b2ac-b9ef9fc8b81a" />
+
 
 ## Dokumentasi - aman
 1. Google meet pertama, 29 November 2025
