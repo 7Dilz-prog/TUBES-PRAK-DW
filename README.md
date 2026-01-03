@@ -4,8 +4,9 @@
 
 ---
 
-# Scaramouchtor
-Scaramouchtor ialah website dealer mobil. Dengan anggota tim :
+# Scaramouchtor (latar belakang)
+Scaramouchtor ialah website dealer mobil blablabla dengan menerapkan framework bootstrap. ((panjangin maksud websitenya apa, jelasin bahwa sudah memenuhi kriteria utama proyek))
+Dengan anggota tim :
 1. Abdurrahman (4524210003)
 2. Alifian Revan Arnanta (4524210010)
 3. Delsyad Iza (4524210025)
@@ -13,7 +14,7 @@ Scaramouchtor ialah website dealer mobil. Dengan anggota tim :
 5. Herlyana Ferdiani (4524210042)
 6. Inna Lutfiah Fatih (4524210044)
 
-## Halaman Utama Website Scaramouchtor
+## Halaman Utama Website Scaramouchtor (dijelasin ada apa aja di dalam page tersebut)
 Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Landing Page
 2. About Us
