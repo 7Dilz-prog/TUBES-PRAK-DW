@@ -66,11 +66,12 @@ body {
     .navbar .container-fluid {
         display: flex;
         justify-content: space-between !important;
-        padding-left: 20px !important;
+        align-items: center !important;
+        padding-left: 16px !important;
         padding-right: 20px !important; }
     .navbar-brand img {
-        width: 120px !important; 
-        height: auto !important; }
+        width: 160px !important; 
+        height: 60px !important; }
     .navbar-collapse {
         background-color: #000000 !important; /* Hitam Solid */
         padding: 20px;
