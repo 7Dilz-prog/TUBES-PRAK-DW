@@ -4,8 +4,9 @@
 
 ---
 
-# Scaramouchtor
-Scaramouchtor ialah website dealer mobil. Dengan anggota tim :
+# Scaramouchtor (latar belakang)
+Scaramouchtor ialah website dealer mobil blablabla dengan menerapkan framework bootstrap. ((panjangin maksud websitenya apa, jelasin bahwa sudah memenuhi kriteria utama proyek))
+Dengan anggota tim :
 1. Abdurrahman (4524210003)
 2. Alifian Revan Arnanta (4524210010)
 3. Delsyad Iza (4524210025)
@@ -40,6 +41,3 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 6. Masuk ke branch masing-masing
 7. git merge origin Delsyad
 8. Lakukan poin 2 sampai 4
-
-# Dokumentasi
-1. 29/11/2025 : Our first meeting on google meet!
