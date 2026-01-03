@@ -96,20 +96,25 @@ article::before {
     padding: 20px;
     background-color: transparent !important;
     z-index: 10;
-    
+}
+
+article h5{
+    white-space: nowrap; /* Mencegah teks turun ke bawah */
+    display: inline-block;
+    color: #ffffff !important;
 }
 
 .card-title.fs-2 {
-        text-align: center !important;
+        text-align: left !important;
         display: block !important;
-        width: 100% !important;
+        width: 90% !important;
         writing-mode: horizontal-tb !important; /* Memastikan teks tidak vertikal */
-        letter-spacing: 5px;
+        font-weight: 700;
+        font-size: 50px;
+        color: #ffffff !important;
     }
 
-.card-text.fs-6{
-    color: #ff9900;
-}
+
 
 .accent-divider {
     border: none;
@@ -280,6 +285,7 @@ footer {
     gap: 6px;
     cursor: pointer;
     z-index: 2001;
+    margin-right : 20px;
 }
 
 .kebab-menu span {
