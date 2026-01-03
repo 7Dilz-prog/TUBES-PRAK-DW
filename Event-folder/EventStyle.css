@@ -70,8 +70,9 @@ article {
     background: url(Background\ one.jpeg) center center/cover;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 120px 0 50px 0;
     position: relative;
     z-index: 1;
 }
@@ -119,10 +120,9 @@ article h5{
     border: none;
     height: 0;
     border-top: 6px solid #ff9900;
-    width: 150px !important;
-    margin: 10px 0;
+    width: 260px;
+    margin: 10px auto;
     border-radius: 8px;
-    margin: 10px auto !important; 
         width: 150px !important;
 }
 
@@ -166,8 +166,7 @@ article h5{
     height: 0;
     border-top: 6px solid #FFD700;
     width: 190px;
-    margin: 20px 0;
-    margin-left: 580px;
+    margin: 20px auto;
     border-radius: 8px;
 }
 
@@ -303,20 +302,17 @@ footer {
     left: 50%;
     transform: translate(-50%, -150%); 
     perspective: 1000px;
-    width: 90%;
-    max-width: 500px;
-    height: 70%;
+    width: 86%;
+    max-width: 280px;
+    height: 69%;
     background: #000000;
     z-index: 2000;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    /* Padding agar semua menu masuk ke dalam bingkai */
     padding: 20px 0; 
-    border-radius: 20px;
+    border-radius: 7px;
     border: 1px solid #FFD700;
     
     clip-path: inset(0 0 100% 0); 
@@ -330,15 +326,15 @@ footer {
 .mobile-menu a {
     width: 90%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: white;
     text-decoration: none;
-    padding: 18px 0;
+    padding: 12px 0;
     margin: 2px 0;
     transition: 0.3s;
     /* Garis pemisah antar menu */
-    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
     transform: translateY(-10px);
     transition: transform 0.8s ease, color 0.3s ease;
 }
@@ -347,17 +343,13 @@ footer {
     transform: translateY(0);
 }
 
-.mobile-menu a:first-child {
-    border-top: none;
-}
-
 .mobile-menu a.active {
     background: linear-gradient(135deg, #FFD700 0%, #ff9900 100%);
-    color: #000 !important;
+    color: #FFFFFF;
     border-radius: 50px;
-    border-top: none; 
     box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
-    margin: 10px 0; 
+    margin: 10px 0 15px 0;
+    border-bottom: 1px solid #FFD700;
 }
 
 .mobile-menu a:hover:not(.active) {
@@ -368,7 +360,7 @@ footer {
 .mobile-menu.show {
     opacity: 1;
     pointer-events: auto;
-    clip-path: inset(0 0 0 0); 
+    clip-path: inset(0 0 0 0);
 }
 
 /* RESPONSIVE */
@@ -418,7 +410,7 @@ footer {
     
 }
 
-.event-cards .card-body {
+.event-cards .card-body {   
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
@@ -440,4 +432,23 @@ footer {
     border-radius: 12px;
     height: 220px;
     object-fit: cover;
+}
+
+/* PENYESUAIAN UNTUK UKURAN TABLET (768px)   */
+@media (min-width: 768px) {
+    .mobile-menu {
+        width: 90%;           
+        max-width: 900px;
+        padding: 30px 0;
+        border-radius: 9px;
+    }
+
+    .mobile-menu a {
+        font-size: 1.3rem;
+        padding: 15px 0;
+    }
+    
+    .mobile-menu a.active {
+        width: 80%; /* Menyesuaikan lebar highlight kuning */
+    }
 }

@@ -138,7 +138,7 @@ article::before {
 
 .fw-bold2{
     font-size: 30px;
-    text-align: center;
+    text-align: 10px;
     font-weight: bold;
 }
 
@@ -283,9 +283,8 @@ article::before {
     height: 0;
     border-top: 6px solid #FFD700;
     width: 200px;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
-    margin-left: 513px;
 }
 
 .rounded-circle {
@@ -332,9 +331,8 @@ article::before {
     height: 0;
     border-top: 6px solid #FFD700;
     width: 350px;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
-    margin-left: 427px;
 }
 
 .p-4.border.rounded,

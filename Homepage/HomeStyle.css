@@ -212,8 +212,7 @@ article::before {
     height: 0;
     border-top: 6px solid #ff9900;
     width: 200px; 
-    margin: 20px 0;
-    margin-left: 485px;
+    margin: 20px auto;
     border-radius: 8px;
 }
 
