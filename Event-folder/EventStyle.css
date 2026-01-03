@@ -281,6 +281,7 @@ footer {
     gap: 6px;
     cursor: pointer;
     z-index: 2001;
+    margin-right: -50px !important;
 }
 
 .kebab-menu span {
@@ -293,21 +294,22 @@ footer {
 /* FULLSCREEN MENU */
 .mobile-menu {
     position: fixed;
-    top: 620px; 
+    top: 38%; 
     left: 50%;
-    transform: translate(-50%, -150%); 
+    transform: translate(-50%, -50%); 
     perspective: 1000px;
-    width: 86%;
-    max-width: 280px;
-    height: 69%;
+    width: 94%;
+    min-width: 240px;
+    max-width: 94%;
+    height: auto;
     background: #000000;
     z-index: 2000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0; 
-    border-radius: 7px;
+    padding: 10px 0; 
+    border-radius: 10px;
     border: 1px solid #FFD700;
     
     clip-path: inset(0 0 100% 0); 
@@ -321,7 +323,7 @@ footer {
 .mobile-menu a {
     width: 90%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: white;
     text-decoration: none;
