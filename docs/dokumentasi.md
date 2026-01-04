@@ -93,8 +93,39 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 5. Workshops
-6. Events
-7. Contact Us
+   <img width="1902" height="939" alt="image" src="https://github.com/user-attachments/assets/7a629568-f630-493f-bb88-592b426fff3f" />
+   <img width="1898" height="726" alt="image" src="https://github.com/user-attachments/assets/8f0a1be2-d7a6-4e1c-8fad-bad35def0a6d" />
+   <img width="1898" height="802" alt="image" src="https://github.com/user-attachments/assets/b3fef3d5-77f8-45a5-bced-20b5d17a2a9c" />
+   <img width="1906" height="401" alt="image" src="https://github.com/user-attachments/assets/76f227ae-44eb-410b-80e2-71ba16f2dedf" />
+   <img width="1901" height="742" alt="image" src="https://github.com/user-attachments/assets/bced0367-be2f-4def-b1af-8aacc32ae5ef" />
+   <img width="1901" height="864" alt="image" src="https://github.com/user-attachments/assets/0dfaf427-fa33-4abe-9120-76b5266d7f8d" />
+   <p align= "justify">
+   Halaman Workshop pada website Scaramouchtor berfungsi sebagai media informasi layanan perawatan dan perbaikan kendaraan. Halaman ini menampilkan deskripsi singkat mengenai komitmen Scaramouchtor dalam memberikan layanan profesional dengan mekanik bersertifikasi dan suku cadang asli. Konten utama berisi daftar layanan servis kendaraan yang dikelompokkan ke dalam beberapa kategori dan ditampilkan secara interaktif menggunakan fitur expandable list. Selain itu, halaman ini menyediakan fasilitas kontak melalui tombol WhatsApp untuk pemesanan dan konsultasi layanan, serta peta lokasi workshop melalui Google Maps untuk memudahkan pengguna menemukan lokasi. Secara keseluruhan, halaman Workshop dirancang untuk menyampaikan informasi layanan secara ringkas sekaligus mempermudah komunikasi dan akses lokasi bagi pengguna.
+   </p>
+   <br><br>
+
+   <img width="1894" height="812" alt="image" src="https://github.com/user-attachments/assets/7178fee9-c011-4697-95c7-ade9b23c9371" />
+   <p align= "center">
+   Fitur Detail Summary
+   </p>
+   <br><br>
+
+   <img width="1901" height="856" alt="image" src="https://github.com/user-attachments/assets/98ac6b7a-538e-49ac-9d39-961dbbf0fa0a" />
+   <p align= "center">
+   Fitur Kontak WhatsApp
+   </p>
+   <br><br>
+
+   <img width="1901" height="587" alt="image" src="https://github.com/user-attachments/assets/e4203f9f-869d-4e16-a946-b52397c0a318" />
+   <p align= "center">
+   Fitur Maps
+   </p>
+   <br><br>
+
+
+
+7. Events
+8. Contact Us
 
 ## Pembagian tugas - na
 1. HTML -> Delsyad, Herlyana
