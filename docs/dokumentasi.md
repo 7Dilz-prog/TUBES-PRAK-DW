@@ -6,6 +6,7 @@ Pengembangan website ini didasari oleh kebutuhan akan platform yang tidak hanya 
 scaramouchtor telah mengintegrasikan standar pengembangan web modern yang mengutamakan aspek inklusivitas serta keunggulan teknis. Pada aspek aksesibilitas (A11y), platform ini menerapkan standar WCAG dalam pemilihan kontras warna guna menjamin kenyamanan bagi pengguna dengan keterbatasan penglihatan warna (colorblind safe). Penggunaan HTML semantik dan sistem navigasi berbasis keyboard (tab index) juga diimplementasikan untuk mempermudah aksesibilitas bagi penyandang disabilitas.
 
 Secara teknis, website ini mengusung desain responsif dan adaptif melalui pemanfaatan sistem fluid grid. Dengan konfigurasi breakpoint yang presisi, antarmuka Scaramouchtor mampu bertransformasi secara dinamis mengikuti dimensi layar perangkat, seperti penyesuaian navigasi menjadi hamburger menu pada tampilan mobile. Selain itu, aspek interaktivitas situs didukung oleh integrasi JavaScript dan data JSON yang mengelola fitur carousel kendaraan serta modal spesifikasi unit. Sinergi antara elemen tersebut, ditambah dengan integrasi API Google Maps dan WhatsApp, bertujuan untuk menciptakan pengalaman pengguna yang efisien, komunikatif, dan profesional.
+
 Anggota tim penyusun :
 1. Abdurrahman (4524210003)
 2. Alifian Revan Arnanta (4524210010)
