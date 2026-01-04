@@ -125,7 +125,28 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 7. Events
-8. Contact Us
+   <img width="1899" height="926" alt="image" src="https://github.com/user-attachments/assets/27fd3468-bd1b-477d-9f3b-ba7b26fc25aa" />
+   <img width="1902" height="256" alt="image" src="https://github.com/user-attachments/assets/6eed6df1-d2ff-4b56-8fd5-c9ed26cc9f78" />
+   <img width="1902" height="724" alt="image" src="https://github.com/user-attachments/assets/402b095e-9317-4e62-89cc-3adfe2541a7b" />
+   <p align= "justify">
+   Halaman Events pada website Scaramouchtor berfungsi sebagai media informasi kegiatan dan aktivitas yang diselenggarakan oleh Scaramouchtor. Halaman ini menampilkan daftar event yang telah dilaksanakan dalam bentuk kartu berisi nama acara, deskripsi singkat, waktu pelaksanaan, serta tombol akses lokasi. Selain itu, halaman ini juga menyediakan informasi upcoming events untuk memberitahukan agenda kegiatan mendatang kepada pengguna. Sebagai pendukung, ditampilkan video dokumentasi event yang bertujuan memberikan gambaran suasana dan aktivitas acara. Secara keseluruhan, halaman Events dirancang untuk menyampaikan informasi kegiatan sekaligus memudahkan pengguna mengakses lokasi dan dokumentasi event.
+   </p>
+   <br><br>
+
+   <img width="1894" height="929" alt="image" src="https://github.com/user-attachments/assets/19f1cb63-c704-4eb0-aa96-a528ebee3937" />
+   <p align= "center">
+   Fitur Akses Lokasi Event
+   </p>
+   <br><br>
+
+   <img width="1896" height="665" alt="image" src="https://github.com/user-attachments/assets/63cb4452-a62e-4b13-90e1-7ebd1ad4a727" />
+   <p align= "center">
+   Fitur Pemutaran Video
+   </p>
+   <br><br>
+
+
+9. Contact Us
 
 ## Pembagian tugas - na
 1. HTML -> Delsyad, Herlyana
