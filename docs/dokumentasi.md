@@ -258,7 +258,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       Tampilan di Laptop
       </p>
       <br><br>
-3. About Us
+2. About Us
          - HP
      <p align="center">
         <img width="316" height="857" alt="image" src="https://github.com/user-attachments/assets/0c82f004-c343-4ed5-b7a7-edb89d1816a7" />
@@ -361,7 +361,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       <br><br>
 
       
-5. Inventory
+3. Inventory
    - HP
      <p align="center">
         <img width="319" height="852" alt="image" src="https://github.com/user-attachments/assets/a40c7077-9a84-40e7-a22b-450dce4b1df5" />
@@ -424,7 +424,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       </p>
       <br><br>
      
-7. Workshops
+4. Workshops
    - HP
      <p align="center">
          <img width="317" height="852" alt="image" src="https://github.com/user-attachments/assets/fba3f0a2-a86e-4f97-9a4b-07da57b45d9b" />
@@ -513,8 +513,119 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       Tampilan di Laptop
       </p>
       <br><br>
-9. Events
-10. Contact Us
+
+      
+5. Events
+   - HP
+     <p align="center">
+         <img width="316" height="797" alt="image" src="https://github.com/user-attachments/assets/c8dc3ca8-33b0-4e6e-b550-b08e3f4e7fdc" />
+     </p>
+     <p align= "center">
+        <img width="314" height="699" alt="image" src="https://github.com/user-attachments/assets/fdbaa34f-deb8-41ad-911e-98c708a25bda" />
+     </p>
+     <p align= "center">
+        <img width="314" height="731" alt="image" src="https://github.com/user-attachments/assets/4e440687-3d1b-4069-9d03-110f2b37ee64" />
+     </p>
+     <p align= "center">
+        <img width="314" height="522" alt="image" src="https://github.com/user-attachments/assets/5e7b553f-af89-43cb-bb6a-4a56cafe1d5a" />
+     </p>
+      <p align= "center">
+      Tampilan di HP
+      </p>
+      <br><br>
+
+   - Tablet
+     <p align="center">
+        <img width="757" height="851" alt="image" src="https://github.com/user-attachments/assets/e71ec1d2-14c9-44f7-9445-e5da00b07a1b" />
+     </p>
+     <p align= "center">
+        <img width="764" height="396" alt="image" src="https://github.com/user-attachments/assets/d64b740c-d2e3-4462-a49f-63be0e930a50" />
+     </p>
+     <p align= "center">
+        <img width="760" height="725" alt="image" src="https://github.com/user-attachments/assets/ee238209-5e5f-4c8a-9ebe-094441c5b6e6" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Tablet
+      </p>
+      <br><br>
+      
+   - Laptop
+     <p align="center">
+        <img width="1018" height="852" alt="image" src="https://github.com/user-attachments/assets/3e2d9d84-1083-4cb5-87e2-f9e92ce95ea1" />
+     </p>
+     <p align= "center">
+        <img width="1018" height="281" alt="image" src="https://github.com/user-attachments/assets/2ba3d2ce-0623-482c-a87b-0973a0d69dbf" />
+     </p>
+     <p align= "center">
+        <img width="1017" height="757" alt="image" src="https://github.com/user-attachments/assets/20892476-0a65-4c4c-bf35-c9daf6ff034a" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Laptop
+      </p>
+      <br><br>
+
+6. Contact Us
+    - HP
+     <p align="center">
+         <img width="315" height="801" alt="image" src="https://github.com/user-attachments/assets/1079021b-7d22-4653-907c-f015a40f487d" />
+     </p>
+     <p align= "center">
+        <img width="318" height="751" alt="image" src="https://github.com/user-attachments/assets/9fc859d3-ed05-4b2b-b5a7-54b776476326" />
+     </p>
+     <p align= "center">
+        <img width="315" height="557" alt="image" src="https://github.com/user-attachments/assets/b1b61334-f299-4f0c-8086-6c43406ec484" />
+     </p>
+     <p align= "center">
+        <img width="316" height="727" alt="image" src="https://github.com/user-attachments/assets/e48e1a6f-94b9-403b-ab56-e2491cd732c2" />
+     </p>
+      <p align= "center">
+        <img width="316" height="566" alt="image" src="https://github.com/user-attachments/assets/248eda56-b218-4f5b-8b48-bc8df146e756" />
+     </p>
+
+      <p align= "center">
+      Tampilan di HP
+      </p>
+      <br><br>
+
+   - Tablet
+     <p align="center">
+        <img width="762" height="684" alt="image" src="https://github.com/user-attachments/assets/97015550-0075-4ffd-8a86-a29d13871292" />
+     </p>
+     <p align= "center">
+        <img width="761" height="716" alt="image" src="https://github.com/user-attachments/assets/762f5574-d6e9-4843-bfad-920cba768c8c" />
+     </p>
+     <p align= "center">
+        <img width="766" height="566" alt="image" src="https://github.com/user-attachments/assets/26aaf147-b9de-4dc3-85e0-2bc57cff201d" />
+     </p>
+      <p align= "center">
+        <img width="763" height="763" alt="image" src="https://github.com/user-attachments/assets/f8a041b3-a136-4bb6-8cc0-dee6377f64f1" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Tablet
+      </p>
+      <br><br>
+      
+   - Laptop
+     <p align="center">
+        <img width="1019" height="849" alt="image" src="https://github.com/user-attachments/assets/66c83cfe-771f-49e6-9891-145ac84ccb0c" />
+     </p>
+     <p align= "center">
+        <img width="1020" height="753" alt="image" src="https://github.com/user-attachments/assets/ee607ea9-9d7f-4589-a839-6b6d5b2501b6" />
+     </p>
+     <p align= "center">
+        <img width="1018" height="753" alt="image" src="https://github.com/user-attachments/assets/380fc713-c0e4-47df-9724-57a64877bd2e" />
+     </p>
+      <p align= "center">
+        <img width="1018" height="632" alt="image" src="https://github.com/user-attachments/assets/993a4f7a-a43b-4e52-822a-bdc1ba23f9d8" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Laptop
+      </p>
+      <br><br>
 
 ## Bukti Aksesibilitas Audit Lighthouse - na
 1. Homepage
