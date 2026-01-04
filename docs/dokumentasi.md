@@ -219,8 +219,44 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       Tampilan di HP
       </p>
       <br><br>
+      
    - Tablet
+     <p align="center">
+        <img width="765" height="852" alt="image" src="https://github.com/user-attachments/assets/52c12aa5-0924-4222-9865-d417dfdbe7ad" />
+     </p>
+     <p align= "center">
+         <img width="766" height="623" alt="image" src="https://github.com/user-attachments/assets/f2c6bc03-b89e-4766-8a28-d516644f5414" />
+     </p>
+     <p align= "center">
+        <img width="763" height="755" alt="image" src="https://github.com/user-attachments/assets/43bc9347-fd97-4f87-bb31-993edf16285b" />
+     </p>
+     <p align= "center">
+        <img width="762" height="282" alt="image" src="https://github.com/user-attachments/assets/53f5d29e-9045-4c6c-8ae5-ab9a127cacb4" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Tablet
+      </p>
+      <br><br>
+      
    - Laptop
+     <p align="center">
+        <img width="1017" height="858" alt="image" src="https://github.com/user-attachments/assets/873d0786-8d1b-4a68-af12-dbbf965f264d" />
+     </p>
+     <p align= "center">
+         <img width="1018" height="747" alt="image" src="https://github.com/user-attachments/assets/4b586f9a-c8c5-4345-b53a-bf2fa433f098" />
+     </p>
+     <p align= "center">
+        <img width="1007" height="754" alt="image" src="https://github.com/user-attachments/assets/e92be67a-90f2-47aa-b41a-cab8abf5ac77" />
+     </p>
+     <p align= "center">
+        <img width="1016" height="243" alt="image" src="https://github.com/user-attachments/assets/114c0f29-5f26-45f1-ae94-75908ee9abb1" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Laptop
+      </p>
+      <br><br>
 3. About Us
 4. Inventory
 5. Workshops
