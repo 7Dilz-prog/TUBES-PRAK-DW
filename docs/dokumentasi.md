@@ -147,6 +147,28 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 9. Contact Us
+    <img width="1904" height="670" alt="image" src="https://github.com/user-attachments/assets/b2a70f6c-4f03-4a4d-b6fb-a66946cbc26b" />
+    <img width="1905" height="734" alt="image" src="https://github.com/user-attachments/assets/d2bccc21-482f-4989-8f28-484139648d83" />
+    <img width="1903" height="469" alt="image" src="https://github.com/user-attachments/assets/0c946d7c-f684-48f1-9722-28b2cf0205a5" />
+    <img width="1902" height="837" alt="image" src="https://github.com/user-attachments/assets/a8a7ebac-f52f-4143-8f14-7fa57f906eac" />
+    <p align= "justify">
+    Halaman Contact Us pada website Scaramouchtor berfungsi sebagai media utama untuk memudahkan pengguna menghubungi pihak Scaramouchtor dan mendapatkan informasi layanan. Halaman ini menyediakan akses ke media sosial resmi, informasi kontak (telepon, email, alamat), serta bagian FAQ untuk menjawab pertanyaan umum secara cepat. Selain itu, halaman menampilkan Google Maps untuk membantu pengguna menemukan lokasi. Secara keseluruhan, halaman ini dirancang untuk meningkatkan kemudahan komunikasi dan akses informasi bagi pengguna.
+    </p>
+    <br><br>
+
+    <img width="1900" height="673" alt="image" src="https://github.com/user-attachments/assets/d08927f5-34be-4141-928c-bf9338ff8aa9" />
+    <p align= "center">
+    Fitur Link Media Sosial
+    </p>
+    <br><br>
+
+    <img width="1906" height="303" alt="image" src="https://github.com/user-attachments/assets/76efd7ae-f11a-4eef-8567-3f0139faa663" />
+   <p align= "center">
+   Fitur tampilan FAQ
+   </p>
+   <br><br>
+
+
 
 ## Pembagian tugas - na
 1. HTML -> Delsyad, Herlyana
