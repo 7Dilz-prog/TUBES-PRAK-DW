@@ -14,27 +14,27 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Home Page
    <img width="1902" height="938" alt="image" src="https://github.com/user-attachments/assets/2dfc96a5-fdbf-49a1-8db7-b2a514bbb374" />
    
-   <img width="1900" height="837" alt="image" src="https://github.com/user-attachments/assets/9695a3cf-252b-438d-9fe4-f29821f8a482" />
+   <img width="1227" height="847" alt="image" src="https://github.com/user-attachments/assets/cd10cdcb-3dba-4b94-99aa-95ab4f944bea" />
 
-   <img width="1902" height="842" alt="image" src="https://github.com/user-attachments/assets/41907ea7-94b9-4cb1-9176-10fe1f1115c1" />
+   <img width="1229" height="851" alt="image" src="https://github.com/user-attachments/assets/6971476c-0caf-4d8d-80f1-10ea7fd7f8ff" />
    <p align= "justify">
    Halaman Homepage pada website Scaramouchtor berfungsi sebagai halaman utama yang memberikan gambaran awal mengenai website sekaligus menyediakan fitur interaktif dasar bagi pengguna. Fitur utama yang tersedia pada halaman ini adalah navigasi menu (navbar) yang memungkinkan pengguna berpindah ke halaman lain seperti About Us, Inventory, Workshops, Events, dan Contact Us. Selain itu, terdapat carousel kendaraan yang dapat dioperasikan oleh pengguna untuk melihat beberapa mobil unggulan melalui tombol navigasi next dan previous. Homepage juga menyediakan tombol View pada bagian Inventory dan Workshops yang berfungsi sebagai akses cepat bagi pengguna untuk menuju halaman terkait. Selain fitur tersebut, konten lain pada halaman Homepage bersifat informatif dan berfungsi untuk memperkenalkan identitas serta layanan Scaramouchtor tanpa interaksi langsung dari pengguna.
    </p>
    <br><br>
    
-   <img width="1901" height="937" alt="image" src="https://github.com/user-attachments/assets/dfe12e51-6e2a-47bc-9c48-881db2fe4832" />
+   <img width="1230" height="658" alt="image" src="https://github.com/user-attachments/assets/e44bf71d-394f-4ce0-bfe3-7344c4f0a18a" />
    <p align= "center">
    Tampilan fitur Carousel Kendaraan
    </p>
    <br><br>
 
-   <img width="1900" height="932" alt="image" src="https://github.com/user-attachments/assets/f3f85740-45bf-47fa-8362-fd95c21307de" />
+   <img width="1238" height="186" alt="image" src="https://github.com/user-attachments/assets/57b7fd95-bf8a-4a65-a89b-2c139425013a" />
    <p align= "center">
    Tampilan fitur tombol View untuk menuju halaman Inventory
    </p>
    <br><br>
    
-   <img width="1898" height="935" alt="image" src="https://github.com/user-attachments/assets/43da1b9b-7802-400a-9c14-a993b75fee33" />
+   <img width="1229" height="851" alt="image" src="https://github.com/user-attachments/assets/360f6330-347b-4698-8cd0-1a6d01ef9b4c" />
    <p align= "center">
    Tampilan fitur tombol View untuk menuju halaman Workshop
    </p>
