@@ -359,10 +359,73 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       Tampilan di Laptop
       </p>
       <br><br>
+
+      
 5. Inventory
-6. Workshops
-7. Events
-8. Contact Us
+   - HP
+     <p align="center">
+        <img width="319" height="852" alt="image" src="https://github.com/user-attachments/assets/a40c7077-9a84-40e7-a22b-450dce4b1df5" />
+     </p>
+     <p align= "center">
+        <img width="316" height="766" alt="image" src="https://github.com/user-attachments/assets/9ed872c7-de2e-49f0-8735-75643d5f1cc1" />
+     </p>
+     <p align= "center">
+        <img width="318" height="758" alt="image" src="https://github.com/user-attachments/assets/e5b73c05-649f-4a49-a590-f32e8a79372d" />
+     </p>
+     <p align= "center">
+        <img width="315" height="718" alt="image" src="https://github.com/user-attachments/assets/41d696df-eb99-458e-8a70-f882364f95b4" />
+     </p>
+      <p align= "center">
+      Tampilan di HP
+      </p>
+      <br><br>
+
+   - Tablet
+     <p align="center">
+        <img width="766" height="827" alt="image" src="https://github.com/user-attachments/assets/3da67e0e-a5ee-4fbd-945f-7da69f377241" />
+     </p>
+     <p align= "center">
+        <img width="764" height="720" alt="image" src="https://github.com/user-attachments/assets/d4881499-9895-4b3d-ad8b-bb55ff06a0fb" />
+     </p>
+     <p align= "center">
+        <img width="765" height="781" alt="image" src="https://github.com/user-attachments/assets/8cae0831-4c4c-4287-9947-add864a040ab" />
+     </p>
+     <p align= "center">
+        <img width="766" height="688" alt="image" src="https://github.com/user-attachments/assets/bd7fce88-063f-41eb-b856-5d5a22cca6aa" />
+     </p>
+      <p align= "center">
+         <img width="766" height="533" alt="image" src="https://github.com/user-attachments/assets/44e12b5e-5e71-4fec-972f-bae776699426" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Tablet
+      </p>
+      <br><br>
+      
+   - Laptop
+     <p align="center">
+        <img width="1020" height="834" alt="image" src="https://github.com/user-attachments/assets/231414be-cc5c-4f55-a9bd-463e9d39525f" />
+     </p>
+     <p align= "center">
+        <img width="1019" height="722" alt="image" src="https://github.com/user-attachments/assets/9b3e565c-ae0c-4b75-a401-dd6d8cb86218" />
+     </p>
+     <p align= "center">
+        <img width="1021" height="762" alt="image" src="https://github.com/user-attachments/assets/b4e1b0ce-dc43-41bf-9776-5a2acb9d83d9" />
+     </p>
+     <p align= "center">
+        <img width="1020" height="767" alt="image" src="https://github.com/user-attachments/assets/a4c077f6-59e0-4d79-b65a-3122d0116cc7" />
+     </p>
+      <p align="center">
+        <img width="1018" height="756" alt="image" src="https://github.com/user-attachments/assets/46ccf326-73a0-425d-a333-9b20b4cde4bd" />
+     </p>
+
+      <p align= "center">
+      Tampilan di Laptop
+      </p>
+      <br><br>
+7. Workshops
+8. Events
+9. Contact Us
 
 ## Bukti Aksesibilitas Audit Lighthouse - na
 1. Homepage
