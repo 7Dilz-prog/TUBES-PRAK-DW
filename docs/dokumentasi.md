@@ -1,6 +1,12 @@
 # Scaramouchtor (latar belakang) - aman
-Scaramouchtor ialah website dealer mobil blablabla dengan menerapkan framework bootstrap. ((panjangin maksud websitenya apa, jelasin bahwa sudah memenuhi kriteria utama proyek)) 
-Dengan anggota tim :
+Scaramouchtor merupakan platform website dealer mobil modern yang dirancang untuk memberikan pengalaman penjelajahan kendaraan premium secara digital yang elegan dan informatif. Di tengah perkembangan industri otomotif yang kian pesat, Scaramouchtor hadir bukan sekadar sebagai katalog online, melainkan sebagai solusi digital terintegrasi yang menjembatani antara unit penjualan (Inventory), layanan purna jual (Workshops), hingga aktivitas komunitas (Events).
+
+Pengembangan website ini didasari oleh kebutuhan akan platform yang tidak hanya estetis secara visual, tetapi juga memiliki performa yang optimal dan inklusif. Oleh karena itu, Scaramouchtor dibangun dengan menerapkan Bootstrap 5 sebagai framework utama. Pemilihan framework ini memastikan bahwa seluruh elemen antarmuka bersifat konsisten dan menyenangkan, mulai dari keseragaman font, sistem spacing, hingga bentuk komponen UI yang intuitif guna menjamin User Flow yang lancar bagi calon pembeli. Website ini sudah memenuhi kriteria utama proyek 
+
+scaramouchtor telah mengintegrasikan standar pengembangan web modern yang mengutamakan aspek inklusivitas serta keunggulan teknis. Pada aspek aksesibilitas (A11y), platform ini menerapkan standar WCAG dalam pemilihan kontras warna guna menjamin kenyamanan bagi pengguna dengan keterbatasan penglihatan warna (colorblind safe). Penggunaan HTML semantik dan sistem navigasi berbasis keyboard (tab index) juga diimplementasikan untuk mempermudah aksesibilitas bagi penyandang disabilitas.
+
+Secara teknis, website ini mengusung desain responsif dan adaptif melalui pemanfaatan sistem fluid grid. Dengan konfigurasi breakpoint yang presisi, antarmuka Scaramouchtor mampu bertransformasi secara dinamis mengikuti dimensi layar perangkat, seperti penyesuaian navigasi menjadi hamburger menu pada tampilan mobile. Selain itu, aspek interaktivitas situs didukung oleh integrasi JavaScript dan data JSON yang mengelola fitur carousel kendaraan serta modal spesifikasi unit. Sinergi antara elemen tersebut, ditambah dengan integrasi API Google Maps dan WhatsApp, bertujuan untuk menciptakan pengalaman pengguna yang efisien, komunikatif, dan profesional.
+Anggota tim penyusun :
 1. Abdurrahman (4524210003)
 2. Alifian Revan Arnanta (4524210010)
 3. Delsyad Iza (4524210025)
@@ -291,14 +297,17 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Google meet pertama, 29 November 2025
   ![WhatsApp Image 2026-01-03 at 10 01 46](https://github.com/user-attachments/assets/cf9a8e67-790c-4358-b6e4-590ffbc87c2f)
 
-   --> (ngapain aja)
+   --> Pembagian tugas-tugas project 
 2. Proses Wireframe, 30 November 2025
 3. Proses diskusi part HTML 30  nov-6 des
-4. Proses diskusi part CSS  6 des-19 des css
-5. Proses diskusi part JS dan responsif  23-30 des
-6. Proses JSON 23-24 des
-7. Proses evaluasi 02 des-04 januari
-8. Proses diskusi laporan
+   ![WhatsApp Image 2026-01-04 at 16 35 35](https://github.com/user-attachments/assets/5385f594-49ee-4676-9edc-a6daab63c6ef)
+
+   --> Membahas bagian HTML
+5. Proses diskusi part CSS  6 des-19 des css
+6. Proses diskusi part JS dan responsif  23-30 des
+7. Proses JSON 23-24 des
+8. Proses evaluasi 02 des-04 januari
+9. Proses diskusi laporan
     ![WhatsApp Image 2026-01-03 at 10 47 36](https://github.com/user-attachments/assets/867408ff-d645-4fd5-9085-3b72b0a4b732)
 
     --> Membahas dan menyusun laporan bersama-sama
