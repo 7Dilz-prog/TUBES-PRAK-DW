@@ -304,11 +304,10 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
    --> Membahas responsif di JS
 6. Proses JSON 23-24 des
-   ![WhatsApp Image 2026-01-04 at 16 52 32 (1)](https://github.com/user-attachments/assets/dd887475-7496-448d-ab0e-ad18bc8f42e0)
    
    --> Membahas bagian JSON
-7. Proses evaluasi 02 des-04 januari
-8. Proses diskusi laporan
+8. Proses evaluasi 02 des-04 januari
+9. Proses diskusi laporan
     ![WhatsApp Image 2026-01-03 at 10 47 36](https://github.com/user-attachments/assets/867408ff-d645-4fd5-9085-3b72b0a4b732)
 
     --> Membahas dan menyusun laporan bersama-sama
