@@ -9,7 +9,6 @@ Dengan anggota tim :
 6. Inna Lutfiah Fatih (4524210044)
 
 ## Halaman Utama dan Fitur Website Scaramouchtor - elin
-(dijelasin ada apa aja di dalam page tersebut, sama ss)
 Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Home Page
    <img width="1902" height="938" alt="image" src="https://github.com/user-attachments/assets/2dfc96a5-fdbf-49a1-8db7-b2a514bbb374" />
@@ -92,7 +91,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    <br><br>
 
 
-5. Workshops
+4. Workshops
    <img width="1902" height="939" alt="image" src="https://github.com/user-attachments/assets/7a629568-f630-493f-bb88-592b426fff3f" />
    <img width="1898" height="726" alt="image" src="https://github.com/user-attachments/assets/8f0a1be2-d7a6-4e1c-8fad-bad35def0a6d" />
    <img width="1898" height="802" alt="image" src="https://github.com/user-attachments/assets/b3fef3d5-77f8-45a5-bced-20b5d17a2a9c" />
@@ -124,7 +123,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 
-7. Events
+5. Events
    <img width="1899" height="926" alt="image" src="https://github.com/user-attachments/assets/27fd3468-bd1b-477d-9f3b-ba7b26fc25aa" />
    <img width="1902" height="256" alt="image" src="https://github.com/user-attachments/assets/6eed6df1-d2ff-4b56-8fd5-c9ed26cc9f78" />
    <img width="1902" height="724" alt="image" src="https://github.com/user-attachments/assets/402b095e-9317-4e62-89cc-3adfe2541a7b" />
@@ -146,7 +145,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    <br><br>
 
 
-9. Contact Us
+6. Contact Us
     <img width="1904" height="670" alt="image" src="https://github.com/user-attachments/assets/b2a70f6c-4f03-4a4d-b6fb-a66946cbc26b" />
     <img width="1905" height="734" alt="image" src="https://github.com/user-attachments/assets/d2bccc21-482f-4989-8f28-484139648d83" />
     <img width="1903" height="469" alt="image" src="https://github.com/user-attachments/assets/0c946d7c-f684-48f1-9722-28b2cf0205a5" />
@@ -200,11 +199,21 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    
 ## Bukti Responsiveness dan tampilan (3 device berbeda) - elin
 1. Home
-2. About Us
-3. Inventory
-4. Workshops
-5. Events
-6. Contact Us
+   - HP
+     <img width="315" height="852" alt="image" src="https://github.com/user-attachments/assets/1a4eee97-b90d-4163-bb44-4c6c98a3b6d3" />
+     <img width="317" height="753" alt="image" src="https://github.com/user-attachments/assets/dda8dfd7-b2a9-4b76-9811-ffbbfd36e5db" />
+     <img width="313" height="751" alt="image" src="https://github.com/user-attachments/assets/3a9dd615-469c-4ab1-802f-d4b10f25a236" />
+     <img width="318" height="746" alt="image" src="https://github.com/user-attachments/assets/03bd141a-3b14-4adb-8913-6d06afd44a6e" />
+
+
+
+   - Tablet
+   - Laptop
+3. About Us
+4. Inventory
+5. Workshops
+6. Events
+7. Contact Us
 
 ## Bukti Aksesibilitas Audit Lighthouse - na
 1. Homepage
