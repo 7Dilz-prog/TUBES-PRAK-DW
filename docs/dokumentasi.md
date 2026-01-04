@@ -200,13 +200,25 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 ## Bukti Responsiveness dan tampilan (3 device berbeda) - elin
 1. Home
    - HP
+     <p align="center">
      <img width="315" height="852" alt="image" src="https://github.com/user-attachments/assets/1a4eee97-b90d-4163-bb44-4c6c98a3b6d3" />
-     <img width="317" height="753" alt="image" src="https://github.com/user-attachments/assets/dda8dfd7-b2a9-4b76-9811-ffbbfd36e5db" />
-     <img width="313" height="751" alt="image" src="https://github.com/user-attachments/assets/3a9dd615-469c-4ab1-802f-d4b10f25a236" />
-     <img width="318" height="746" alt="image" src="https://github.com/user-attachments/assets/03bd141a-3b14-4adb-8913-6d06afd44a6e" />
-
-
-
+     </p>
+     <p align= "center">
+        <img width="315" height="600" alt="image" src="https://github.com/user-attachments/assets/fa2f31b0-c529-4a55-8183-84f1b96e69e1" />
+     </p>
+     <p align= "center">
+        <img width="307" height="288" alt="image" src="https://github.com/user-attachments/assets/fd5d3c62-d97a-4799-9106-478f83e75805" />
+     </p>
+     <p align= "center">
+        <img width="314" height="683" alt="image" src="https://github.com/user-attachments/assets/c10b11d6-b8f6-4354-8ffd-8f172cbc8fc6" />
+     </p>
+     <p align= "center">
+        <img width="317" height="763" alt="image" src="https://github.com/user-attachments/assets/76668098-0d76-4dab-9104-4521a3ac0058" />
+     </p>
+      <p align= "center">
+      Tampilan di HP
+      </p>
+      <br><br>
    - Tablet
    - Laptop
 3. About Us
