@@ -1,4 +1,4 @@
-# Scaramouchtor (latar belakang) - aman
+# Scaramouchtor (latar belakang)
 Scaramouchtor merupakan platform dealer mobil digital modern yang mengintegrasikan layanan penjualan, purna jual, dan aktivitas komunitas untuk menjawab tantangan industri otomotif di era digital. Dibangun menggunakan framework Bootstrap 5, platform ini mengutamakan pengalaman pengguna (UX) yang elegan dengan antarmuka yang konsisten dan intuitif. Selain aspek estetika, Scaramouchtor mengusung prinsip inklusivitas dengan menerapkan standar aksesibilitas WCAG, seperti penggunaan kontras warna yang aman bagi penyandang buta warna serta navigasi berbasis HTML semantik yang mendukung perangkat bantu disabilitas. Secara teknis, website ini telah mengadopsi desain responsif yang adaptif terhadap berbagai perangkat melalui sistem fluid grid. Sinergi antara JavaScript, data JSON, serta integrasi API Google Maps dan WhatsApp memastikan fungsionalitas fitur berjalan dinamis dan efisien, menciptakan solusi digital yang profesional bagi calon pembeli kendaraan premium.
 
 Anggota tim penyusun :
@@ -9,7 +9,7 @@ Anggota tim penyusun :
 5. Herlyana Ferdiani (4524210042)
 6. Inna Lutfiah Fatih (4524210044)
 
-## Halaman Utama dan Fitur Website Scaramouchtor - elin
+## Halaman Utama dan Fitur Website Scaramouchtor
 Beberapa halaman utama yang dimiliki website scaramouchtor :
 1. Home Page
    <img width="1902" height="938" alt="image" src="https://github.com/user-attachments/assets/2dfc96a5-fdbf-49a1-8db7-b2a514bbb374" />
@@ -170,7 +170,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 
-## Pembagian tugas - na
+## Pembagian tugas 
 1. HTML -> Delsyad, Herlyana
 2. CSS -> Farash, Abdurrahman
 3. JS, Responsiveness -> Alifian, Inna
@@ -178,7 +178,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 5. Wireframe -> Delsyad, Alifian, Farash
 6. Laporan ReadME -> Inna, Herlyana, Abdurrahman
 
-## Workflow Branch - na
+## Workflow Branch
 1. Masuk terminal kemudian gunakan gitbash
 2. Kondisi branch sekarang di branch utama "Delsyad"
 3. Buat branch dulu --> git checkout -b NAMAKALIAN(nama panggilan aja). contoh : git checkout -b Elin
@@ -190,15 +190,10 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 9. git merge origin Delsyad
 10. Lakukan poin 2 sampai 4
 
-## Wireframe (minta pian)
-1. Homepage
-2. About Us
-3. Inventory 
-4. Workshops
-5. Events
-6. Contact Us
+## Wireframe
+https://www.figma.com/design/f4NN9gccg3SSc8YZWWMWp3/Porject-Tubes-DW-prak?node-id=17-2&t=E0XOSMfK21Zliff5-1
    
-## Bukti Responsiveness dan tampilan (3 device berbeda) - elin
+## Bukti Responsiveness dan tampilan (3 device berbeda)
 1. Home
    - HP
      <p align="center">
@@ -627,7 +622,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
       </p>
       <br><br>
 
-## Bukti Aksesibilitas Audit Lighthouse - na
+## Bukti Aksesibilitas Audit Lighthouse 
 1. Homepage
    ![WhatsApp Image 2026-01-03 at 11 12 01](https://github.com/user-attachments/assets/ed41c150-4cce-428c-af45-0ce1b8dcd446)
 2. About Us
@@ -651,7 +646,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
    <img width="734" height="288" alt="image" src="https://github.com/user-attachments/assets/c904d3db-0a83-4817-b2ac-b9ef9fc8b81a" />
 
 
-## Dokumentasi - aman
+## Dokumentasi
 1. Diskusi via Google Meet
   ![WhatsApp Image 2026-01-03 at 10 01 46](https://github.com/user-attachments/assets/cf9a8e67-790c-4358-b6e4-590ffbc87c2f)
 
