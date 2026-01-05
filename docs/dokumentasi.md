@@ -652,25 +652,7 @@ Beberapa halaman utama yang dimiliki website scaramouchtor :
 
 
 ## Dokumentasi - aman
-1. Google meet pertama, 29 November 2025
+1. Diskusi via Google Meet
   ![WhatsApp Image 2026-01-03 at 10 01 46](https://github.com/user-attachments/assets/cf9a8e67-790c-4358-b6e4-590ffbc87c2f)
 
-   --> Pembagian tugas-tugas project 
-2. Proses Wireframe, 30 November 2025
-3. Proses diskusi part HTML 30  nov-6 des
-   ![WhatsApp Image 2026-01-04 at 16 35 35](https://github.com/user-attachments/assets/5385f594-49ee-4676-9edc-a6daab63c6ef)
-
-   --> Membahas bagian HTML
-4. Proses diskusi part CSS  6 des-19 des css
-5. Proses diskusi part JS dan responsif  23-30 des
-   ![WhatsApp Image 2026-01-04 at 16 52 32](https://github.com/user-attachments/assets/f2dc1b1d-2905-4d9a-a288-aad1010ced76)
-
-   --> Membahas responsif di JS
-6. Proses JSON 23-24 des
-   
-   --> Membahas bagian JSON
-8. Proses evaluasi 02 des-04 januari
-9. Proses diskusi laporan
-    ![WhatsApp Image 2026-01-03 at 10 47 36](https://github.com/user-attachments/assets/867408ff-d645-4fd5-9085-3b72b0a4b732)
-
-    --> Membahas dan menyusun laporan bersama-sama
+   --> Membahas tentang bagian-bagian tugas dari masing-masing anggota untuk projek website ini 
