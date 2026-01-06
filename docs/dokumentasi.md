@@ -1,4 +1,4 @@
-# Scaramouchtor (latar belakang)
+# Scaramouchtor
 Scaramouchtor merupakan platform dealer mobil digital modern yang mengintegrasikan layanan penjualan, purna jual, dan aktivitas komunitas untuk menjawab tantangan industri otomotif di era digital. Dibangun menggunakan framework Bootstrap 5, platform ini mengutamakan pengalaman pengguna (UX) yang elegan dengan antarmuka yang konsisten dan intuitif. Selain aspek estetika, Scaramouchtor mengusung prinsip inklusivitas dengan menerapkan standar aksesibilitas WCAG, seperti penggunaan kontras warna yang aman bagi penyandang buta warna serta navigasi berbasis HTML semantik yang mendukung perangkat bantu disabilitas. Secara teknis, website ini telah mengadopsi desain responsif yang adaptif terhadap berbagai perangkat melalui sistem fluid grid. Sinergi antara JavaScript, data JSON, serta integrasi API Google Maps dan WhatsApp memastikan fungsionalitas fitur berjalan dinamis dan efisien, menciptakan solusi digital yang profesional bagi calon pembeli kendaraan premium.
 
 Anggota tim penyusun :
